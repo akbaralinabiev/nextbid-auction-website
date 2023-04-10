@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+h1{
+  font-size: 56px;
+  line-height: 56px;
+  color: #222;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 36px;
+  line-height: 44px;
+  color: #222;
+}
+
+h4{
+  font-size: 20px;
+  color: #222;
+}
+
+h6{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-m1{
+  margin: 40px 0;
+}
+
+body{
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+
+/*Header starts here*/
+#header{
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li{
+  list-style: none;
+  padding: 5px 20px;
+  position: relative;
+}
+
+.navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #40514E;
+  transition: 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+  color: #1fae9b;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: #1fae9b;
+  position: absolute;
+  bottom: -1px;
+  left: 20px;
+  transition: 0.8s;
+}
+
+.navbar-icons{
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.navbar-icons a{
+  margin:0 20px 0 20px ;
+}
+
+/*******Search Bar********/
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 16px;
+  /* letter-spacing: 2px; */
+  outline: none;
+  /* border-radius: 50%; */
+  background-color: #F5F5F5;
+  transition: all .5s ease-in-out;
+  padding-right: 40px;
+  color:#000000;
+}
+.input-search::placeholder{
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  color:#000000 ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0.660, 0.480, 0.555, 0.540);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0.660, 0.480, 0.555, 0.540);
+}
+
+
+/*******Login & Sign Up********/
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 90px;
+  padding: 10px 0;
+  transition: 0.4s;
+}
+
+.reg {
+  color: white;
+  background-color: #1fae9b;
+}
+
+.log {
+  color: #1fae9b;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #1fae9b;
+}
+
+.container button:hover {
+  color: white;
+
+  box-shadow: 0 0 10px #1fae9b;
+  background-color: #1fae9b;
+}
+
+/*******Hero section********/
+#hero{
+  background-image:
+  linear-gradient(to left,  rgba(73, 73, 73, 0.269),rgba(0, 0, 0, 0.493)),
+  url('/imgs/artem-beliaikin-55ZdeceBz24-unsplash.jpg');
+  background-position: top 25% right 0;
+  background-size: cover;
+  height: 400px;
+  padding: 0 80px;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero h4{
+  color: aliceblue;
+  padding: 15px 0;
+}
+
+#hero h1{
+  color: #1fae9b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  width: 580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.card img {
+  max-width: 300px;
+  max-height: 200px;
+  margin-right: 20px;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card-bid {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card-bid input[type="number"] {
+  font-size: 18px;
+  padding: 7px 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-bid button {
+  width: 100px;
+  height: 42px;
+  font-size: 18px;
+  background-color: #1fae9b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-bid button:hover {
+  background-color: #179383;
+}
+
+#countdown-timer {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-details p{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.product-prices {
+  margin-top: 10px;
+}
+
+.current-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.last-bid-price {
+  font-size: 14px;
+  color: #666;
+}
+
+/* #current-bid{
+  font-weight: 600;
+} */
+
+.card-bid input::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-text-1{
+  display: none;
+}
+
+.card-details .card-text-last{
+  font-size: 18px;
+}
+
+#bid-input{
+  width: 140px;
+}
+
+#cards{
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+}
