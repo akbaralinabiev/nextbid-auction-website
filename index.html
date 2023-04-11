@@ -47,46 +47,57 @@
 
 
   <section id="cards">
-  <div class="card">
-   <a href="#"> <img src="https://pixabay.com/get/g6dd242d0d01e371e2123a507c372a1e815d5259d09a56ea8e08f8cb3f41d58f6a14dc7a02727060f55e4680b40217698_1280.jpg" alt="Product Image"></a>
+
+
+  <div class="card auction-card">
+    <a href="#"><img src="https://retailminded.com/wp-content/uploads/2016/03/EN_GreenOlive-1.jpg" alt="Product Image"></a>
     <div class="card-details">
-      <h3 class="card-title">Lila Valdez</h3>
-      <div class="product-prices">
-        <p>Price: <span class="current-price">$50.00</span></p>
-      </div>
-      <p class="card-text">Your Bid: <span class="current-price" id="current-bid">$0.00</span></p>
-      <p class="card-text">Last Bid: <span class="current-price" id="last-bid">$60.00</span></p>
-      <p class="card-text-1">Closing Time: <span id="closing-time">2023-04-11T08:00:00Z</span></p>
+      <h3 class="card-title">Lavender</h3>
+      <p class="card-text">Your Bid: <span class="current-price current-bid">$0.00</span></p>
+      <p class="card-text">Last Bid: <span class="current-price last-bid">$60.00</span></p>
+      <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
       <div class="card-bid">
-        <input type="number" id="bid-input" placeholder="Place Bid">
-        <button type="button" onclick="bid()">Submit</button>
+        <input type="number" class="bid-input" placeholder="Place Bid">
+        <button onclick="bid(this.closest('.auction-card'))">Place Bid</button>
       </div>
-      <p class="card-text-last">Closing time: <span id="countdown-timer"></span></p>
+      <p class="card-text-last">Closing time: <span class="countdown-timer"></span></p>
     </div>
   </div>
-  
-  <div class="card">
+  <!-- ... -->
+  <div class="card auction-card">
     <a href="#"><img src="https://pixabay.com/get/g66724fb6bb4f47b39329b759e92d640b4875218b9579c47e66b9b3c675493430599923ec2f5d1a2e83edfc9ade655634_1280.jpg" alt="Product Image"></a>
     <div class="card-details">
       <h3 class="card-title">Monster</h3>
-      <div class="product-prices">
-        <p>Price: <span class="current-price">$45.00</span></p>
-      </div>
-      <p class="card-text">Your Bid: <span class="current-price" id="current-bid">$0.00</span></p>
-      <p class="card-text">Last Bid: <span class="current-price" id="last-bid">$80.00</span></p>
-      <p class="card-text-1">Closing Time: <span id="closing-time">2023-04-11T08:00:00Z</span></p>
+      <p class="card-text">Your Bid: <span class="current-price current-bid">$0.00</span></p>
+      <p class="card-text">Last Bid: <span class="current-price last-bid">$60.00</span></p>
+      <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
       <div class="card-bid">
-        <input type="number" id="bid-input" placeholder="Place Bid">
-        <button type="button" onclick="bid()">Submit</button>
+        <input type="number" class="bid-input" placeholder="Place Bid">
+        <button onclick="bid(this.closest('.auction-card'))">Place Bid</button>
       </div>
-      <p class="card-text-last">Closing time: <span id="countdown-timer"></span></p>
+      <p class="card-text-last">Closing time: <span class="countdown-timer"></span></p>
     </div>
   </div>
-
-  <div class="card">
+   <!-- ... -->
+   <div class="card auction-card">
     <a href="#"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MX472?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1570119347612" alt="Product Image"></a>
     <div class="card-details">
       <h3 class="card-title">One Headphones</h3>
+      <p class="card-text">Your Bid: <span class="current-price current-bid">$0.00</span></p>
+      <p class="card-text">Last Bid: <span class="current-price last-bid">$60.00</span></p>
+      <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
+      <div class="card-bid">
+        <input type="number" class="bid-input" placeholder="Place Bid">
+        <button onclick="bid(this.closest('.auction-card'))">Place Bid</button>
+      </div>
+      <p class="card-text-last">Closing time: <span class="countdown-timer"></span></p>
+    </div>
+  </div>
+
+
+<!-- 
+  <div class="card">
+   
       <div class="product-prices">
         <p>Price: <span class="current-price">$75.00</span></p>
       </div>
@@ -95,12 +106,12 @@
       <p class="card-text-1">Closing Time: <span id="closing-time">2023-04-11T08:00:00Z</span></p>
       <div class="card-bid">
         <input type="number" id="bid-input" placeholder="Place Bid">
-        <button type="button" onclick="bid()">Submit</button>
+        <button onclick="bid(this.closest('.auction-card'))">Place Bid</button>
       </div>
       <p class="card-text-last">Closing time: <span id="countdown-timer"></span></p>
     </div>
   </div>
-
+ -->
 
   </section>
 

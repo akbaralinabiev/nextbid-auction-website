@@ -297,7 +297,7 @@ button {
 }
 
 .card-bid button {
-  width: 100px;
+  width: 130px;
   height: 42px;
   font-size: 18px;
   background-color: #1fae9b;
@@ -311,8 +311,8 @@ button {
   background-color: #179383;
 }
 
-#countdown-timer {
-  font-size: 24px;
+.countdown-timer {
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -353,7 +353,7 @@ button {
   font-size: 18px;
 }
 
-#bid-input{
+.bid-input{
   width: 140px;
 }
 
