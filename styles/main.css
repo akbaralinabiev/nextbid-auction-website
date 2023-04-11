@@ -49,10 +49,14 @@ body{
 
 /*Header starts here*/
 #header{
-  padding: 20px 80px;
+  padding: 10px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  width: 100%;
+  background-color: #F5F5F5;
 }
 
 .navbar{
@@ -204,7 +208,7 @@ button {
   url('/imgs/artem-beliaikin-55ZdeceBz24-unsplash.jpg');
   background-position: top 25% right 0;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   padding: 0 80px;
   align-items: flex-start;
   justify-content: center;
@@ -312,7 +316,7 @@ button {
 }
 
 .countdown-timer {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -350,7 +354,7 @@ button {
 }
 
 .card-details .card-text-last{
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .bid-input{
