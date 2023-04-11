@@ -19,8 +19,8 @@
   <a href="#"><img src="/icons/Nextbid.svg" alt="" style="width: 100px;"></a>
   <div class="">
     <ul class="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active"  href="new_items.html">New Items</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="new-items.html">New Items</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -51,6 +51,7 @@
   </div>
 
 <!-- ....................................Here starts products section........................................ -->
+
 
 
 <section id="cards" class="second-section">
@@ -123,10 +124,39 @@
         <p class="card-text-last">Closing time: <span class="countdown-timer"></span></p>
       </div>
     </div>
-  </div>
-</section>
+
 
 <!-- ....................................Here starts contact section........................................ -->
+
+<section id="contact">
+<div class="container">
+  <h2>Contact Us</h2>
+  <form id="contact-form" method="post" class="contact-form">
+            <label class="one-label" for="name">Your Full Name*</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+      <div class="form-row">
+          
+        <div class="form-group">
+          <label class="one-label" for="email">Your Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
+        </div>
+          <div class="form-group">
+            <label class="one-label" for="name">Phone Number*</label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone Number">
+          </div>
+      </div>
+      <label class="one-label" for="subjet">Subject</label>
+      <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+
+        <label class="one-label" for="button">Message*</label>
+          <textarea name="message" class="form-control" id="message" rows="6" placeholder="Your message here.."></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+      </div>
+  </form>
+</div>
+</section>
+
 
 <!-- ....................................Here starts footer........................................ -->
 
@@ -180,5 +210,9 @@
   <script src="/js/bid.js"></script>
   <script src="/js/scroll.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
