@@ -22,7 +22,7 @@
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="new-items.html">New Items</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
   <div class="navbar-icons">
@@ -133,20 +133,20 @@
   <h2>Contact Us</h2>
   <form id="contact-form" method="post" class="contact-form">
             <label class="one-label" for="name">Your Full Name*</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+              <input type="text" name="name" class="form-control" id="name" placeholder="AKbarali Nabiev">
       <div class="form-row">
           
         <div class="form-group">
-          <label class="one-label" for="email">Your Email</label>
+          <label class="one-label" for="email">Your Email*</label>
             <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
         </div>
           <div class="form-group">
             <label class="one-label" for="name">Phone Number*</label>
-            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone Number">
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
           </div>
       </div>
-      <label class="one-label" for="subjet">Subject</label>
-      <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+      <label class="one-label" for="subjet">Subject*</label>
+      <input type="text" name="subject" class="form-control" id="subject" placeholder="subject">
 
         <label class="one-label" for="button">Message*</label>
           <textarea name="message" class="form-control" id="message" rows="6" placeholder="Your message here.."></textarea>
@@ -175,7 +175,7 @@
      </div>
      <div class="footer-col">
        <h4>get help</h4>
-       <ul>
+       <ul class="footer-ul">
          <li><a href="#">FAQ</a></li>
          <li><a href="#">shipping</a></li>
          <li><a href="#">returns</a></li>
@@ -185,7 +185,7 @@
      </div>
      <div class="footer-col">
        <h4>online shop</h4>
-       <ul>
+       <ul class="footer-ul">
          <li><a href="#">watch</a></li>
          <li><a href="#">bag</a></li>
          <li><a href="#">shoes</a></li>
@@ -209,10 +209,17 @@
   <script src="/js/script.js"></script>
   <script src="/js/bid.js"></script>
   <script src="/js/scroll.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="/js/top-to-scroll.js"></script>
+
+  <!--*************************************Here starts top-to button***************************************-->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="/icons/to-top-button.svg" alt="Back to Top">
+  </button>
+  
+
 </body>
 </html>
