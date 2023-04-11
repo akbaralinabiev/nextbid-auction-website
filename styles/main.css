@@ -277,9 +277,6 @@ button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* .card-bid input[type=number] {
-  -moz-appearance: textfield;
-} */
 
 .card-bid input[type="number"] {
   font-size: 18px;
@@ -388,13 +385,76 @@ button {
   }
 }
 
+
+
+/*************************************Here starts intro section***************************************/
+
+.intro{
+  margin: 120px 0 120px 0;
+  background-image: linear-gradient(
+      to left,
+      #0c5d5231,
+      #0b5047ba
+    ),
+    url("/imgs/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
+  background-position: top 35% right 0;
+  background-size: cover;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+}
+
+.intro-info{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.intro h2 {
+  font-size: 40px;
+  color: aliceblue;
+  padding:  0;
+  font-weight: 700;
+}
+
+.intro h4 {
+  font-size: 25px;
+  color: aliceblue;
+  padding: 25px 0;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************************************Here starts contact section***************************************/
 
 #contact {
+  background-color: white;
   display: flex;
   width: 100%;
   height: 100vh;
   align-items: center;
+  margin-top: 40px;
 }
 
 .one-label {
@@ -417,17 +477,28 @@ h2 {
   background-color: #fff;
   padding: 2rem;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
 }
 
-.form-row {
+.form-name-email {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form-group {
-  padding: 0.5rem;
-  width: 50%;
+  width: 48%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .form-name-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
 }
 
 .form-control {
@@ -456,6 +527,7 @@ textarea.form-control {
 }
 
 .btn {
+  width: 100%;
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -464,7 +536,7 @@ textarea.form-control {
   user-select: none;
   background-color: transparent;
   border: 1px solid #ced4da;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 4px;
@@ -484,10 +556,10 @@ textarea.form-control {
 .container-1 {
   max-width: 1350px;
   margin: auto;
+  padding: 0 80px;
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .footer-col {
@@ -498,7 +570,7 @@ textarea.form-control {
   list-style: none;
 }
 .footer {
-  background-color: #e1e1e1;
+  background-color: #ecebeb;
   padding: 70px 0;
 }
 .footer-col {
@@ -554,21 +626,31 @@ textarea.form-control {
   color: #ffffff;
   transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover {
   color: #179383;
   background-color: #f5f5f5;
 }
 
-/*responsive*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+    flex-basis: calc(50% - 16px);
+  }
+  .container-1 {
+    max-width: auto;
+    margin: auto;
+    padding: 0 0 0 60px;
   }
 }
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
   }
 }
 
