@@ -63,6 +63,7 @@ body{
 }
 
 .navbar{
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,6 +209,7 @@ button {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding-left: 80px;
 }
 
 #hero h4{
@@ -457,7 +459,7 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-ul{
+.footer-ul{
   list-style: none;
 }
 .footer{
