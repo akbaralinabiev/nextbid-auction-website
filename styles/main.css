@@ -53,10 +53,12 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
   width: 100%;
   background-color: #F5F5F5;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+
+
 }
 
 .navbar{
@@ -95,6 +97,13 @@ body{
   left: 20px;
   transition: 0.8s;
 }
+
+@media(max-width: 1145px){
+  .navbar{
+    display: none;
+  }
+}
+
 
 .navbar-icons{
   width: 300px;
@@ -204,9 +213,9 @@ button {
 /*******Hero section********/
 #hero{
   background-image:
-  linear-gradient(to left,  rgba(73, 73, 73, 0.269),rgba(0, 0, 0, 0.493)),
+  linear-gradient(to left,  rgba(73, 73, 73, 0.269),rgba(0, 0, 0, 0.449)),
   url('/imgs/artem-beliaikin-55ZdeceBz24-unsplash.jpg');
-  background-position: top 25% right 0;
+  background-position: top 35% right 0;
   background-size: cover;
   height: 600px;
   padding: 0 80px;
@@ -225,26 +234,10 @@ button {
   color: #1fae9b;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.current-goods{
+  margin-top: 80px;
+  text-align: center;
+}
 
 
 
@@ -254,42 +247,47 @@ button {
 
 
 .card {
-  width: 580px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  max-width: 348px;
 }
 
 
 .card img {
   max-width: 300px;
-  max-height: 200px;
-  margin-right: 20px;
+  max-height: 300px;
+  align-items: center;
+  
 }
 
-.card-details {
-  flex: 1;
+.auction-card-img{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 300px;
 }
 
 .card-title {
-  font-size: 24px;
+  max-width: 300px;
+  font-size: 20px;
   margin: 0;
+  font-weight: 600;
 }
 
 .card-text {
-  font-size: 18px;
+  max-width: 300px;
   margin: 10px 0;
 }
 
 .card-bid {
   display: flex;
   flex-direction: row;
-
+  width: 300px;
 }
 
 .card-bid input[type="number"] {
@@ -302,12 +300,12 @@ button {
 
 .card-bid button {
   width: 130px;
-  height: 42px;
-  font-size: 18px;
+  height: 40px;
+  font-size: 16px;
   background-color: #1fae9b;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -320,19 +318,24 @@ button {
   font-weight: bold;
 }
 
-.card-details p{
-  font-size: 16px;
-  font-weight: 600;
+.card-details{
+  margin-top: 15px;
+  max-width: 300px;
+  justify-content: space-between;
 }
 
+.card-details p{
+  font-size: 14px;
+  font-weight: 600;
+}
 
 .product-prices {
   margin-top: 10px;
 }
 
 .current-price {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .last-bid-price {
@@ -340,13 +343,15 @@ button {
   color: #666;
 }
 
-/* #current-bid{
-  font-weight: 600;
-} */
+.card-bid input{
+  border: 1px solid #000000;
+}
 
 .card-bid input::placeholder{
   font-size: 16px;
   font-weight: 400;
+  color: gray;
+  font-style: italic;
 }
 
 .card-text-1{
@@ -354,6 +359,7 @@ button {
 }
 
 .card-details .card-text-last{
+  max-width: 300px;
   font-size: 17px;
 }
 
@@ -362,7 +368,29 @@ button {
 }
 
 #cards{
-  margin: 100px 0;
+  margin: 100px 60px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+ 
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  flex-basis: calc(25% - 16px);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+    margin-bottom: 24px;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
