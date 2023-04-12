@@ -239,8 +239,8 @@ button {
 
 .like-button {
   position: absolute;
-  top: 20px;
-  right: 43px;
+  bottom: 20px;
+  right: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -248,13 +248,35 @@ button {
 
 .like-count {
   position: absolute;
-  top: 22px;
+  bottom: 20px;
   right: 20px;
   font-size: 16px;
   font-weight: 500;
 }
 
 /*************************************Here starts cards section***************************************/
+
+
+#cards {
+  height: auto;
+  margin: 0px 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-container {
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: transparent;
+  flex-basis: calc(50% - 16px);
+  margin-bottom: 24px;
+}
 
 .card {
   display: flex;
@@ -374,7 +396,7 @@ button {
 }
 
 .card-bid input {
-  border: 1px solid #000000;
+  border: 1px solid #ababab;
 }
 
 .card-bid input::placeholder {
@@ -389,33 +411,19 @@ button {
 }
 
 .card-details .card-text-last {
-  max-width: 300px;
-  font-size: 17px;
+  font-size: 16;
+}
+
+.countdown-timer{
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d4d4d;
+  margin-left: 10px;
 }
 
 .bid-input {
   width: 140px;
   height: 42px;
-}
-
-#cards {
-  height: auto;
-  margin: 0px 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.card-container {
-  width: 1500px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.card {
-  flex-basis: calc(50% - 16px);
-  margin-bottom: 24px;
 }
 
 @media (max-width: 768px) {
