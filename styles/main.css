@@ -315,7 +315,7 @@ button {
 
 .card-bid button {
   width: 130px;
-  height: 40px;
+  height: 42px;
   font-size: 16px;
   background-color: #1fae9b;
   color: #fff;
@@ -354,6 +354,20 @@ button {
   font-weight: 600;
 }
 
+.current-price-p{
+  margin-bottom: 15px;
+}
+
+.current-price-p .stroke{
+  padding: 5px 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.current-price-p p{
+  display: flex;
+  justify-content: space-between;
+}
+
 .last-bid-price {
   font-size: 14px;
   color: #666;
@@ -381,6 +395,7 @@ button {
 
 .bid-input {
   width: 140px;
+  height: 42px;
 }
 
 #cards {
