@@ -1,98 +1,97 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
-h1{
+h1 {
   font-size: 56px;
   line-height: 56px;
   color: #222;
   font-weight: 800;
 }
 
-h2{
+h2 {
   font-size: 36px;
   line-height: 44px;
   color: #222;
 }
 
-h4{
+h4 {
   font-size: 20px;
   color: #222;
 }
 
-h6{
+h6 {
   font-size: 12px;
   font-weight: 600;
 }
 
-p{
+p {
   font-size: 16px;
   color: #465b52;
   margin: 15px 0 20px 0;
 }
 
-.section-m1{
+.section-m1 {
   margin: 40px 0;
 }
 
-body{
+body {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
-
 
 /*Header starts here*/
 
-#header{
+#header {
   padding: 14px 80px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1030;
-  background-color: #F5F5F5;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
-.navbar li{
+.navbar li {
   list-style: none;
   padding: 5px 20px;
   position: relative;
 }
 
-.navbar li a{
+.navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #40514E;
+  color: #40514e;
   transition: 0.3s;
 }
 
 .navbar li a:hover,
-.navbar li a.active{
+.navbar li a.active {
   color: #1fae9b;
 }
 
 .navbar li a.active::after,
-.navbar li a:hover::after{
+.navbar li a:hover::after {
   content: "";
   width: 35px;
   height: 2px;
@@ -103,69 +102,78 @@ body{
   transition: 0.8s;
 }
 
-@media(max-width: 1145px){
-  .navbar{
+@media (max-width: 1145px) {
+  .navbar {
     display: none;
   }
 }
 
-
-.navbar-icons{
-  width: 600px;
+.navbar-icons {
+  width: 500px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.navbar-icons a{
-  margin:0 20px 0 20px ;
+.navbar-icons a {
+  margin: 0 20px 0 20px;
 }
 
 /*******Search Bar********/
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
 
-.search__title {
-        font-size: 22px;
-        font-weight: 900;
-        text-align: center;
-    }
+
+
+.search-container{
+  display: flex;
+  justify-content: space-around;
+  /* width: 310px; */
+}
 
 .search__input {
-        width: 235px;
-        padding: 12px 24px;
-        background-color: transparent;
-        transition: transform 250ms ease-in-out;
-        font-size: 14px;
-        line-height: 18px;
-        color: #575756;
-      background-image: url("/icons/search.svg");
-        background-repeat: no-repeat;
-        background-size: 18px 18px;
-        background-position: 95% center;
-        border-radius: 50px;
-        border: 1px solid #666;
-        transition: all 250ms ease-in-out;
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
-    }
+  width: 280px;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #575756;
+  background-image: url("/icons/search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid #666;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.search__title {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+}
+
 
 .search__input::placeholder {
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .search__input:hover,
-        .search__input:focus {
-          background-image: url("/icons/seach1.svg");
-          padding: 12px 0;
-          outline: 0;
-          border: 1px solid transparent;
-          border-bottom: 1px solid #179383;
-          border-radius: 0;
-          background-position: 100% center;
-        }
+.search__input:focus {
+  background-image: url("/icons/seach1.svg");
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #179383;
+  border-radius: 0;
+  background-position: 100% center;
+}
 
 /*******Login & Sign Up********/
 
@@ -198,20 +206,40 @@ button {
 
 /****************************new section*********************************/
 
-.current-goods{
+.current-goods {
   margin: 150px 0 0 0;
   text-align: center;
 }
 
-.current-goods h2{
+.current-goods h2 {
   font-weight: 800;
   color: #191919;
 }
 
-.current-goods p{
+.current-goods p {
   font-size: 18px;
 }
 
+/*************************************Here starts like button design***************************************/
+
+.like-button {
+  position: absolute;
+  top: 20px;
+  right: 43px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.like-count {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*************************************Here starts card design***************************************/
 
 .card {
   display: flex;
@@ -224,15 +252,13 @@ button {
   max-width: 348px;
 }
 
-
 .card img {
   max-width: 300px;
   max-height: 300px;
   align-items: center;
-  
 }
 
-.auction-card-img{
+.auction-card-img {
   display: flex;
   align-items: center;
   width: 300px;
@@ -258,15 +284,11 @@ button {
   width: 300px;
 }
 
-
-.card-bid input[type=number]::-webkit-outer-spin-button,
-.card-bid input[type=number]::-webkit-inner-spin-button {
+.card-bid input[type="number"]::-webkit-outer-spin-button,
+.card-bid input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* .card-bid input[type=number] {
-  -moz-appearance: textfield;
-} */
 
 .card-bid input[type="number"] {
   font-size: 18px;
@@ -296,15 +318,14 @@ button {
   font-weight: bold;
 }
 
-.card-details{
-  
+.card-details {
   text-align: left;
   margin-top: 15px;
   max-width: 300px;
   justify-content: space-between;
 }
 
-.card-details p{
+.card-details p {
   font-size: 14px;
   font-weight: 600;
 }
@@ -323,37 +344,36 @@ button {
   color: #666;
 }
 
-.card-bid input{
+.card-bid input {
   border: 1px solid #000000;
 }
 
-.card-bid input::placeholder{
+.card-bid input::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: gray;
   font-style: italic;
 }
 
-.card-text-1{
+.card-text-1 {
   display: none;
 }
 
-.card-details .card-text-last{
+.card-details .card-text-last {
   max-width: 300px;
   font-size: 17px;
 }
 
-.bid-input{
+.bid-input {
   width: 140px;
 }
 
-#cards{
+#cards {
   height: auto;
   margin: 0px 60px;
   display: flex;
   justify-content: space-around;
   align-items: center;
- 
 }
 
 .card-container {
@@ -377,10 +397,9 @@ button {
   }
 }
 
-
 /*************************************Here starts pagination***************************************/
 
-.pagination-section{
+.pagination-section {
   padding: 80px 0;
 }
 
@@ -398,7 +417,7 @@ button {
   cursor: pointer;
   padding: px 6px;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
   margin: 0 4px;
 }
 
@@ -412,11 +431,7 @@ button {
   border: 1px solid #4caf50;
 }
 
-
-
 /*************************************Here starts footer***************************************/
-
-
 
 .container-2 {
   max-width: 1350px;
@@ -427,7 +442,7 @@ button {
   flex-wrap: wrap;
 }
 
-.footer-col{
+.footer-col {
   text-align: left;
 }
 
@@ -508,9 +523,6 @@ button {
     width: 100%;
   }
 }
-
-
-
 
 /*************************************Here starts top-to button***************************************/
 

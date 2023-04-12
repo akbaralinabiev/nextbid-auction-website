@@ -109,10 +109,10 @@ body {
 }
 
 .navbar-icons {
-  width: 600px;
+  width: 500px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .navbar-icons a {
@@ -129,8 +129,14 @@ body {
   text-align: center;
 }
 
+.search-container{
+  display: flex;
+  justify-content: space-around;
+  /* width: 310px; */
+}
+
 .search__input {
-  width: 235px;
+  width: 280px;
   padding: 12px 24px;
   background-color: transparent;
   transition: transform 250ms ease-in-out;
@@ -228,6 +234,27 @@ button {
   margin: 100px 0 80px 0;
   text-align: center;
 }
+
+/*************************************Here starts like button design***************************************/
+
+.like-button {
+  position: absolute;
+  top: 20px;
+  right: 43px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.like-count {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*************************************Here starts cards section***************************************/
 
 .card {
   display: flex;
@@ -385,17 +412,11 @@ button {
   }
 }
 
-
-
 /*************************************Here starts intro section***************************************/
 
-.intro{
+.intro {
   margin: 120px 0 120px 0;
-  background-image: linear-gradient(
-      to left,
-      #0c5d5231,
-      #0b5047ba
-    ),
+  background-image: linear-gradient(to left, #0c5d5231, #0b5047ba),
     url("/imgs/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
   background-position: top 35% right 0;
   background-size: cover;
@@ -405,19 +426,18 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
+  padding: 0 80px;
 }
 
-.intro-info{
+.intro-info {
   display: flex;
   flex-direction: column;
-
 }
 
 .intro h2 {
   font-size: 40px;
   color: aliceblue;
-  padding:  0;
+  padding: 0;
   font-weight: 700;
 }
 
@@ -428,31 +448,13 @@ button {
   font-weight: 500;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*************************************Here starts contact section***************************************/
 
 #contact {
   background-color: white;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   align-items: center;
   margin-top: 40px;
 }
@@ -538,6 +540,7 @@ textarea.form-control {
   border: 1px solid #ced4da;
   padding: 0.375rem;
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.5;
   border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -547,8 +550,8 @@ textarea.form-control {
 
 .btn:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #1fae9b;
+  border-color: #128777;
 }
 
 /*************************************Here starts footer***************************************/
