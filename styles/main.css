@@ -137,7 +137,6 @@ body {
   display: none;
   position: absolute;
   height: 0;
-  top: 76px;
   width: 100%;
   right: 2rem;
   padding: 0;
@@ -196,7 +195,7 @@ body {
     display: none;
   }
   #header {
-    height: 78px;
+    height: 60px;
     padding: 5px 20px;
   }
   .navbar-icons a{
