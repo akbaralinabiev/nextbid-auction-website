@@ -129,7 +129,7 @@ body {
   text-align: center;
 }
 
-.search-container{
+.search-container {
   display: flex;
   justify-content: space-around;
   /* width: 310px; */
@@ -256,7 +256,6 @@ button {
 
 /*************************************Here starts cards section***************************************/
 
-
 #cards {
   height: auto;
   margin: 0px 60px;
@@ -376,16 +375,16 @@ button {
   font-weight: 600;
 }
 
-.current-price-p{
+.current-price-p {
   margin-bottom: 15px;
 }
 
-.current-price-p .stroke{
+.current-price-p .stroke {
   padding: 5px 0;
   border-bottom: 1px solid #c9c9c9;
 }
 
-.current-price-p p{
+.current-price-p p {
   display: flex;
   justify-content: space-between;
 }
@@ -414,7 +413,7 @@ button {
   font-size: 16;
 }
 
-.countdown-timer{
+.countdown-timer {
   font-size: 18px;
   font-weight: 700;
   color: #4d4d4d;
@@ -443,7 +442,7 @@ button {
     url("/imgs/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
   background-position: top 35% right 0;
   background-size: cover;
-  background-position: center   ;
+  background-position: center;
   height: 400px;
   align-items: center;
   justify-content: center;
@@ -630,7 +629,6 @@ textarea.form-control {
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 300;
   color: #191919;
   display: block;
   transition: all 0.3s ease;
@@ -672,8 +670,7 @@ textarea.form-control {
 }
 @media (max-width: 574px) {
   .footer-col {
-    width: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     flex-basis: calc(50% - 16px);
   }
   .container-1 {
@@ -681,14 +678,21 @@ textarea.form-control {
     margin: auto;
     /* padding: 0 0 0 60px; */
   }
-  .row{
+  .row {
     display: flex;
     justify-content: space-between;
   }
   .container-1 {
-    max-width: 1350px;
     margin: auto;
     padding: 0 20px;
+  }
+  .footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .footer-col ul li a {
+    font-size: 13px;
   }
 }
 
@@ -713,4 +717,21 @@ textarea.form-control {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 574px) {
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+  }
 }
