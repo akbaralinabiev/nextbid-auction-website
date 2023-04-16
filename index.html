@@ -13,16 +13,18 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/styles/main.css">
   <title>Nextbid - Auction Website</title>
 </head>
 
 <body>
   <!-- ....................................Here starts navbar........................................ -->
+  
 
   <section id="header">
     <a href="#"><img src="/icons/Nextbid.svg" alt="" style="width: 100px;"></a>
-    <div class="">
+    <div class="navbar-links">
       <ul class="navbar">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="new-items.html">New Items</a></li>
@@ -39,8 +41,20 @@
         <button class="reg">Login</button>
       </div>
     </div>
-  </section>
 
+    <div class="toggle-btn">
+      <i class="fa-solid fa-bars fa-lg"></i>
+    </div>
+    <div class="dropdown-menu">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="new-items.html">New Items</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><div class="search-container-1">
+        <input class="search__input-1" type="text" placeholder="Search">
+      </div></li>
+    </div>
+  </section>
 
 
   <!-- ....................................Here starts hero section........................................ -->
@@ -257,6 +271,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="/js/top-to-scroll.js"></script>
   <script src="/js/like-counter.js"></script>
+  <script src="/js/toggle-btn.js"></script>
 
   <!--*************************************Here starts top-to button***************************************-->
 
