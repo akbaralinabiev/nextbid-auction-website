@@ -127,14 +127,8 @@ body {
   background-color: #f5f5f5;
 }
 
-.fa-lg{
-  width: 32px;
-  font-size: 27px;
-}
-
 .toggle-btn i.fa-xmark {
-  width: 32px;
-  font-size: 30px;
+  font-size: 25px;
   background-color: #f5f5f5;
 }
 
@@ -890,6 +884,9 @@ textarea.form-control {
 
   .footer-col ul li a {
     font-size: 13px;
+  }
+  .social-links{
+    width: 120px;
   }
 }
 
