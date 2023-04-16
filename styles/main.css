@@ -72,6 +72,9 @@ body {
   justify-content: center;
 }
 
+#header .image{
+  width: 120px
+}
 .navbar li {
   list-style: none;
   padding: 5px 20px;
@@ -103,8 +106,6 @@ body {
   transition: 0.8s;
 }
 
-
-
 .navbar-icons {
   width: 500px;
   display: flex;
@@ -119,12 +120,22 @@ body {
 /*******Hamburger Menu********/
 
 .toggle-btn {
-  height: 25px;
-  padding-top: 2px;
+  padding-top: 6px;
   color: #000000;
   cursor: pointer;
   display: none;
-  background-color: #fff;
+  background-color: #f5f5f5;
+}
+
+.fa-lg{
+  width: 32px;
+  font-size: 27px;
+}
+
+.toggle-btn i.fa-xmark {
+  width: 32px;
+  font-size: 30px;
+  background-color: #f5f5f5;
 }
 
 /*******Dropdown Menu********/
@@ -166,9 +177,6 @@ body {
   color: #1fae9b;
 }
 
-.toggle-btn i.fa-xmark {
-  font-size: 23px;
-}
 
 
 
@@ -213,7 +221,10 @@ body {
   .toggle-btn {
     width: 30px
   }
-
+  #header .image{
+    width: 80px
+    
+  }
 }
 
 /*******Search Bar********/
