@@ -515,16 +515,6 @@ h2 {
   margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
-  .form-name-email {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-group {
-    width: 100%;
-  }
-}
 
 .form-control {
   display: block;
@@ -575,6 +565,47 @@ textarea.form-control {
   color: #fff;
   background-color: #1fae9b;
   border-color: #128777;
+}
+
+@media (max-width: 767px) {
+  .form-name-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+}
+
+@media (max-width: 574px) {
+  #contact {
+    height: 800px;
+    width: 100%;
+    margin-top: 2px;
+  }
+  .one-label {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .form-control{
+    font-size: 15px;
+  }
+  .container {
+    margin: 0;
+    padding: 20px;
+  }
+  .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
+  }
 }
 
 /*************************************Here starts footer***************************************/
@@ -680,7 +711,7 @@ textarea.form-control {
   }
   .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .container-1 {
     margin: auto;
