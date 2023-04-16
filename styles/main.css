@@ -443,6 +443,7 @@ button {
     url("/imgs/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
   background-position: top 35% right 0;
   background-size: cover;
+  background-position: center   ;
   height: 400px;
   align-items: center;
   justify-content: center;
@@ -587,7 +588,6 @@ textarea.form-control {
 .row {
   display: flex;
 }
-
 .footer-col {
   text-align: left;
 }
@@ -672,11 +672,23 @@ textarea.form-control {
 }
 @media (max-width: 574px) {
   .footer-col {
-    width: 100%;
+    width: 150px;
+    margin-bottom: 30px;
+    flex-basis: calc(50% - 16px);
   }
-  .row {
+  .container-1 {
+    max-width: auto;
+    margin: auto;
+    /* padding: 0 0 0 60px; */
+  }
+  .row{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container-1 {
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 20px;
   }
 }
 
