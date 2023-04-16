@@ -471,6 +471,45 @@ button {
   font-weight: 500;
 }
 
+
+@media (max-width: 574px) {
+  
+.intro {
+  margin: 120px 0 120px 0;
+  background-image: linear-gradient(to left, #06393231, #063c35ba),
+    url("/imgs/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
+  background-position: top 35% right 0;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h2 {
+  font-size: 20px;
+  color: aliceblue;
+  padding: 0;
+  font-weight: 700;
+}
+
+.intro h4 {
+  font-size: 17px;
+  color: aliceblue;
+  padding: 20px 0;
+  font-weight: 500;
+}
+}
+
 /*************************************Here starts contact section***************************************/
 
 #contact {
@@ -591,7 +630,7 @@ textarea.form-control {
   }
   .one-label {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .form-control{
     font-size: 15px;
