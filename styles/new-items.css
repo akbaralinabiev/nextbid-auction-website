@@ -72,7 +72,7 @@ body {
 }
 
 #header .image {
-  width: 120px
+  width: 120px;
 }
 
 .navbar li {
@@ -120,7 +120,6 @@ body {
 /*******Hamburger Menu********/
 
 .toggle-btn {
-
   padding-top: 6px;
   color: #191919;
   cursor: pointer;
@@ -177,9 +176,6 @@ body {
 .dropdown-menu li a.active {
   color: #1fae9b;
 }
-
-
-
 
 /*******Search Bar********/
 
@@ -264,12 +260,12 @@ button {
   background-color: #1fae9b;
 }
 
-
 /****************************new section*********************************/
 
 .current-goods {
   margin: 150px 0 0 0;
   text-align: center;
+  padding: 0 80px;
 }
 
 .current-goods h2 {
@@ -282,7 +278,6 @@ button {
 }
 
 @media (max-width: 1250px) {
-
   .navbar,
   .navbar .navbar-icons {
     display: none;
@@ -302,7 +297,6 @@ button {
 }
 
 @media (max-width: 574px) {
-
   #header .search-container,
   .reg {
     display: none;
@@ -337,6 +331,9 @@ button {
   #header .image {
     width: 80px;
   }
+  .current-goods {
+    padding: 0 20px;
+  }
 }
 
 /*************************************Here starts like button design***************************************/
@@ -358,7 +355,6 @@ button {
   font-weight: 500;
 }
 
-
 /*************************************Here starts filter design***************************************/
 
 .filter-container {
@@ -370,26 +366,36 @@ button {
   padding: 0 20px;
 }
 
-.filter{
-  padding: 0 80px;
+.filter-filter {
+  padding: 0 20px;
 }
 
-.inputs{
-display: flex;
-gap: 10px;
-flex-direction: row;
+.inputs {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
 }
+
 .filter-container button {
-  padding: 10px 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  width: 120px;
+  min-width: 140px;
   height: 45px;
+  font-size: 16px;
+  background-color: #1fae9b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
-.inputs input{
+
+.inputs input {
   padding: 10px 12px;
+  width: auto;
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -412,29 +418,29 @@ flex-direction: row;
   background-color: #1a9887;
 }
 
-@media (max-width: 835px){
-  .inputs{
+@media (max-width: 835px) {
+  .inputs {
     display: flex;
     flex-direction: column;
-   
   }
-  
   .filter-container {
     gap: 50px;
- 
   }
-  .filter{
+  .filter {
     padding: 0 20px;
   }
-  
 }
-@media (max-width: 574px){
+
+@media (max-width: 574px) {
   .filter-container {
     gap: 20px;
   }
+
+  .inputs {
+   width: 160px;
+  }
 }
 /*************************************Here starts card design***************************************/
-
 
 #cards {
   height: auto;
@@ -613,7 +619,6 @@ flex-direction: row;
     align-items: center;
   }
 }
-
 
 /*************************************Here starts pagination***************************************/
 
@@ -825,16 +830,3 @@ flex-direction: row;
     height: 35px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
