@@ -14,12 +14,14 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/new-items.css">
   <title>New Items</title>
 </head>
 
 <body>
 
+ 
+  
   <!--Here starts navbar section-->
   <section id="header">
     <a href="#"><img class="image" src="/icons/Nextbid.svg" alt=""></a>
@@ -62,7 +64,19 @@
 
     <!-- ....................................Here starts products section........................................ -->
 
-    <section id="cards" class="second-section">
+    
+      <div class="filter">
+        <div class="filter-container">
+          <div class="inputs">
+          <input type="text" id="nameFilter" placeholder="Filter by name">
+          <input type="number" id="minPriceFilter" placeholder="Min price">
+          <input type="number" id="maxPriceFilter" placeholder="Max price">
+          </div>
+          <button onclick="filterCards()">Apply Filters</button>
+        </div>
+      </div>
+      
+  <section id="cards" class="second-section">
       <div class="card-container">
         <!-- ............................................................................ -->
         <div class="card auction-card">
@@ -102,7 +116,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$25.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -126,7 +140,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$35.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -150,7 +164,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$45.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -174,7 +188,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$55.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -198,7 +212,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$65.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -222,7 +236,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$60.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -246,7 +260,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$40.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -270,7 +284,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$30.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -294,7 +308,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$20.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -318,7 +332,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$80.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -342,7 +356,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$85.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -366,7 +380,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$90.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -390,7 +404,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$95.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -414,7 +428,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$97.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -438,7 +452,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$47.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -462,7 +476,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$112.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -486,7 +500,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$105.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -510,7 +524,7 @@
             <div class="current-price-p">
               <div class="stroke"></div>
               <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-              <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+              <p class="card-text">Last bid: <span class="current-price last-bid">$120.00</span></p> 
             </div>
             <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
             <div class="card-bid">
@@ -610,6 +624,7 @@
     <script src="/js/top-to-scroll.js"></script>
     <script src="/js/like-counter.js"></script>
     <script src="/js/toggle-btn.js"></script>
+    <script src="/js/filter.js"></script>
 
      <!--*************************************Here starts top-to button***************************************-->
 

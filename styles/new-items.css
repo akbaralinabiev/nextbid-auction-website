@@ -358,6 +358,81 @@ button {
   font-weight: 500;
 }
 
+
+/*************************************Here starts filter design***************************************/
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.filter{
+  padding: 0 80px;
+}
+
+.inputs{
+display: flex;
+gap: 10px;
+flex-direction: row;
+}
+.filter-container button {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 120px;
+  height: 45px;
+}
+
+.inputs input{
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.filter-container input:focus,
+.filter-container button:focus {
+  outline: none;
+  border-color: #1fae9b;
+}
+
+.filter-container button {
+  background-color: #1fae9b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-container button:hover {
+  background-color: #1a9887;
+}
+
+@media (max-width: 835px){
+  .inputs{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .filter-container {
+    gap: 50px;
+ 
+  }
+  .filter{
+    padding: 0 20px;
+  }
+  
+}
+@media (max-width: 574px){
+  .filter-container {
+    gap: 20px;
+  }
+}
 /*************************************Here starts card design***************************************/
 
 
@@ -750,3 +825,16 @@ button {
     height: 35px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
