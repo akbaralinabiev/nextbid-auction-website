@@ -108,7 +108,7 @@ body {
 }
 
 .navbar-icons {
-  width: 500px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -296,10 +296,19 @@ button {
   text-align: center;
 }
 
-@media (max-width: 1250px) {
-  .navbar,
-  .navbar .navbar-icons {
+@media (max-width: 980px) {
+  #header {
+    justify-content: space-between;
+    height: 60px;
+    padding: 5px 65px;
+  }
+
+  .navbar {
     display: none;
+  }
+  
+  .navbar-icons{
+    width: 0;
   }
 
   .toggle-btn {
@@ -309,25 +318,38 @@ button {
   .dropdown-menu {
     display: block;
   }
-
-  .dropdown-menu .search-container {
-    display: block;
-  }
-}
-
-@media (max-width: 574px) {
-  #header .search-container,
-  .reg {
+  .login-container {
     display: none;
   }
 
+  .dropdown-menu.open {
+    height: 270px;
+  }
+
+  .dropdown-menu.open .reg{
+    display: block;
+    width: 200px;
+  }
+}
+
+
+@media (max-width: 574px) {
+  .login-container {
+    display: none;
+  }
+
+  .dropdown-menu.open .reg{
+    display: block;
+    width: 200px;
+  }
   #header {
+    justify-content: space-between;
     height: 60px;
     padding: 5px 20px;
   }
 
   .navbar-icons a {
-    display: block;
+    width: 0;
   }
 
   .navbar-icons {
@@ -335,21 +357,19 @@ button {
     justify-content: end;
   }
 
-  .dropdown-menu.open {
-    height: 270px;
+  .navbar-icons{
+    width: 0;
   }
 
-  .dropdown-menu .search__input-1 {
-    display: block;
+
+  .dropdown-menu.open {
+    height: 270px;
   }
 
   .toggle-btn {
     width: 30px;
   }
 
-  #header .image {
-    width: 80px;
-  }
   #hero {
     padding-top: 60px;
     background-position: center;

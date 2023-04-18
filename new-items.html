@@ -35,7 +35,7 @@
     </div>
     <div class="navbar-icons">
       <div class="search-container">
-        <input class="search__input" type="text" placeholder="Search">
+        <input class="search__input" type="text" placeholder="Search" oninput="searchProducts()">
       </div>
       <a href="cart.html"><img src="/icons/shopping.svg" alt=""></a>
       <div class="login-container">
@@ -50,8 +50,8 @@
       <li><a class="active" href="new-items.html">New Items</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><div class="search-container-1">
-        <input class="search__input-1" type="text" placeholder="Search">
+      <li><div class="login-container">
+        <button class="reg">Login</button>
       </div></li>
     </div>
   </section>
@@ -625,6 +625,7 @@
     <script src="/js/like-counter.js"></script>
     <script src="/js/toggle-btn.js"></script>
     <script src="/js/filter.js"></script>
+    <script src="./js/search-filter.js"></script>
 
      <!--*************************************Here starts top-to button***************************************-->
 

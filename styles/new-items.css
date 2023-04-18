@@ -107,6 +107,7 @@ body {
 }
 
 .navbar-icons {
+  padding: 0 20px;
   width: 500px;
   display: flex;
   align-items: center;
@@ -120,6 +121,7 @@ body {
 /*******Hamburger Menu********/
 
 .toggle-btn {
+
   padding-top: 6px;
   color: #191919;
   cursor: pointer;
@@ -128,11 +130,11 @@ body {
 }
 
 .toggle-btn i {
-  width: 26px;
+  width: 36px; 
 }
 
 .toggle-btn i.fa-xmark {
-  font-size: 25px;
+  width: 36px; 
   background-color: #f5f5f5;
 }
 
@@ -294,6 +296,33 @@ button {
   .dropdown-menu .search-container {
     display: block;
   }
+
+  .dropdown-menu.open .reg{
+    display: none;
+  }
+  .toggle-btn i.fa-xmark {
+    margin-left: 20px;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .search-container {
+    display: none;
+  }
+  .dropdown-menu .search-container {
+    display: block;
+  }
+  .navbar-icons {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .dropdown-menu.open .reg{
+    display: none;
+  }
 }
 
 @media (max-width: 574px) {
@@ -301,7 +330,12 @@ button {
   .reg {
     display: none;
   }
+  
 
+  .dropdown-menu.open .reg{
+    display: block;
+    width: 200px;
+  }
   #header {
     height: 60px;
     padding: 5px 20px;
@@ -314,7 +348,7 @@ button {
   .navbar-icons {
     display: flex;
     justify-content: end;
-  }
+  } 
 
   .dropdown-menu.open {
     height: 270px;
@@ -333,6 +367,7 @@ button {
   }
   .current-goods {
     padding: 0 20px;
+    margin: 90px 0;
   }
 }
 
