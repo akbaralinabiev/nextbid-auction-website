@@ -1,0 +1,868 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 56px;
+  color: #222;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+/*************************************************************************************/
+/*****************************Here starts Navbar************************************/
+/*************************************************************************************/
+
+#header {
+    height: 78px;
+    padding: 14px 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #header .image {
+    width: 120px;
+  }
+  
+  .navbar li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #40514e;
+    transition: 0.3s;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.active {
+    color: #1fae9b;
+  }
+  
+  .navbar li a.active::after,
+  .navbar li a:hover::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: #1fae9b;
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+    transition: 0.8s;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-icons a {
+    margin: 0 20px 0 20px;
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Login Button Design************************************/
+/*************************************************************************************/
+
+.login-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 90px;
+    padding: 10px 0;
+    transition: 0.4s;
+  }
+  
+  .reg {
+    color: white;
+    background-color: #1fae9b;
+  }
+  
+  .login-container button:hover {
+    color: white;
+    box-shadow: 0 0 10px #1fae9b;
+    background-color: #1fae9b;
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Hamburger Menu************************************/
+/*************************************************************************************/
+
+.toggle-btn {
+    padding-top: 6px;
+    color: #191919;
+    cursor: pointer;
+    display: none;
+    background-color: #f5f5f5;
+  }
+  
+  .toggle-btn i {
+    width: 26px;
+  }
+  
+  .toggle-btn i.fa-xmark {
+    font-size: 25px;
+    background-color: #f5f5f5;
+  }
+
+
+/*************************************************************************************/
+/*****************************Here starts Dropdown Menu************************************/
+/*************************************************************************************/
+
+.dropdown-menu {
+    border: none;
+    margin-top: 0;
+    display: none;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    right: 2rem;
+    padding: 0;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .dropdown-menu.open {
+    height: 200px;
+    opacity: 0.95;
+  }
+  
+  .dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown-menu li a {
+    font-weight: 600;
+    color: #191919;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover,
+  .dropdown-menu li a.active {
+    color: #1fae9b;
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Hero Section************************************/
+/*************************************************************************************/
+
+#hero {
+    padding-top: 80px;
+    background-image: linear-gradient(
+        to left,
+        rgba(73, 73, 73, 0.269),
+        rgba(0, 0, 0, 0.449)
+      ),
+      url("/images/artem-beliaikin-55ZdeceBz24-unsplash.jpg");
+    background-position: top 35% right 0;
+    background-size: cover;
+    height: 600px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+  }
+  
+  #hero h4 {
+    color: aliceblue;
+    padding: 25px 0;
+    font-weight: 600;
+  }
+  
+  #hero h1 {
+    color: #1fae9b;
+    font-weight: 700;
+  }
+  
+/*************************************************************************************/
+/*****************************Here starts Current Goods Section************************************/
+/*************************************************************************************/
+
+  .current-goods {
+    margin: 100px 0 80px 0;
+    text-align: center;
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Cards************************************/
+/*************************************************************************************/
+
+
+#cards {
+    height: auto;
+    margin: 0px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card-container {
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    background-color: transparent;
+    flex-basis: calc(50% - 16px);
+    margin-bottom: 24px;
+    min-width: 340px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 342px;
+  }
+  
+  .auction-card-img {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .card-title {
+    max-width: 300px;
+    font-size: 23px;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  
+  .card-bid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 300px;
+  }
+  
+  .card-bid input[type="number"]::-webkit-outer-spin-button,
+  .card-bid input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .card-bid input[type="number"] {
+    font-size: 18px;
+    padding: 7px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-bid button {
+    width: 130px;
+    height: 42px;
+    font-size: 16px;
+    background-color: #1fae9b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .card-bid button:hover {
+    background-color: #179383;
+  }
+  
+  .countdown-timer {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card-details {
+    text-align: left;
+    margin-top: 15px;
+    max-width: 300px;
+    justify-content: space-between;
+  }
+  
+  .card-details p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .product-prices {
+    margin-top: 10px;
+  }
+  
+  .current-price {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .current-price-p {
+    margin-bottom: 15px;
+  }
+  
+  .current-price-p .stroke {
+    padding: 5px 0;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  
+  .current-price-p p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .last-bid-price {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-bid input {
+    border: 1px solid #ababab;
+  }
+  
+  .card-bid input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    font-style: italic;
+  }
+  
+  .card-text-1 {
+    display: none;
+  }
+  
+  .card-details .card-text-last {
+    font-size: 16;
+  }
+  
+  .countdown-timer {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4d4d;
+    margin-left: 10px;
+  }
+  
+  .bid-input {
+    width: 140px;
+    height: 42px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: 100%;
+      margin-bottom: 24px;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Like Button Design************************************/
+/*************************************************************************************/
+
+.like-button {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .like-count {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+
+/*************************************************************************************/
+/*****************************Here starts Intro Section************************************/
+/*************************************************************************************/
+
+.intro {
+    margin: 100px 0 0;
+    background-image: linear-gradient(to left, #0c5d5231, #0b5047ba),
+      url("/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
+    background-position: top 5% right 0;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+  }
+  
+  .intro-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .intro h2 {
+    font-size: 40px;
+    color: aliceblue;
+    padding: 0;
+    font-weight: 700;
+  }
+  
+  .intro h4 {
+    font-size: 25px;
+    color: aliceblue;
+    padding: 25px 0;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 574px) {
+    .intro {
+      margin-top: 100px;
+      background-image: linear-gradient(to left, #06393231, #063c35ba),
+        url("/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
+      background-position: top 35% right 0;
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    .intro-info {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .intro h2 {
+      font-size: 20px;
+      color: aliceblue;
+      padding: 0;
+      font-weight: 700;
+    }
+  
+    .intro h4 {
+      font-size: 17px;
+      color: aliceblue;
+      padding: 20px 0;
+      font-weight: 500;
+    }
+  }
+  
+
+/*************************************************************************************/
+/*****************************Here starts Contact Section************************************/
+/*************************************************************************************/
+
+#contact {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+  }
+  
+  .one-label {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
+  }
+  
+  .form-name-email {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    width: 48%;
+    margin-bottom: 0;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 1rem;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #1ab5a054;
+  }
+  .form-control::placeholder{
+    color: #a2a2a2;
+  }
+  
+  textarea.form-control {
+    resize: none;
+  }
+  
+  .btn {
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    padding: 0.375rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    background-color: #1fae9b;
+    border-color: #128777;
+  }
+  
+  @media (max-width: 767px) {
+    .form-name-email {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+  
+  @media (max-width: 574px) {
+    #contact {
+      height: 800px;
+      width: 100%;
+      margin-top: 2px;
+    }
+  
+    .one-label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  
+    .form-control {
+      font-size: 15px;
+    }
+  
+    .container {
+      margin: 0;
+      padding: 20px;
+    }
+  
+    .contact-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
+    }
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Footer************************************/
+/*************************************************************************************/
+
+.container-1 {
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 80px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .footer-col {
+    text-align: left;
+  }
+  
+  .footer-ul {
+    list-style: none;
+  }
+  
+  .footer {
+    background-color: #ecebeb;
+    padding: 70px 0;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #191919;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #179383;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    color: #191919;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #000000;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-block;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #179383;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #179383;
+    background-color: #f5f5f5;
+  }
+
+  .fab{
+    margin-top: 11px;
+  }
+  
+  @media (max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+      flex-basis: calc(50% - 16px);
+    }
+  
+    .container-1 {
+      max-width: auto;
+      margin: auto;
+      padding: 0 0 0 60px;
+    }
+  }
+  
+  @media (max-width: 574px) {
+    .footer-col {
+      margin-bottom: 25px;
+      flex-basis: calc(50% - 16px);
+    }
+  
+    .container-1 {
+      max-width: auto;
+      margin: auto;
+      /* padding: 0 0 0 60px; */
+    }
+  
+    .row {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .container-1 {
+      margin: auto;
+      padding: 0 20px;
+    }
+  
+    .footer-col h4 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  
+    .footer-col ul li a {
+      font-size: 13px;
+    }
+  
+    .social-links {
+      width: 120px;
+    }
+  }
+
+/*************************************************************************************/
+/*****************************Here starts Top To Button************************************/
+/*************************************************************************************/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #myBtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 574px) {
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 0;
+      width: 35px;
+      height: 35px;
+    }
+  }
