@@ -68,6 +68,7 @@ body {
   }
   
   .navbar {
+    width: 100%;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -890,21 +891,11 @@ body {
 /*************************************************************************************/
 
 
-  
+
 @media (max-width: 1250px) {
-    .navbar {
-      display: none;
-    }
-    .navbar-icons {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-      }
-    .toggle-btn {
-      display: block;
-    }
-  
+  .navbar {
+    width: 100%;
+  }
     .dropdown-menu {
       display: block;
     }
@@ -918,7 +909,20 @@ body {
     }
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 930px) {
+    .toggle-btn {
+      display: block;
+    }
+    .navbar-icons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    .navbar {
+      width: 100%;
+      display: none;
+    }
     #header {
         height: 78px;
         padding: 14px 50px;
@@ -945,6 +949,9 @@ body {
   }
   
   @media (max-width: 574px) {
+    .login-container{
+      display: none;
+    }
     #header .search-container,
     .reg {
       display: none;
