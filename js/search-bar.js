@@ -29,12 +29,16 @@ function searchProducts() {
     message.textContent = "No matching products were found.";
     message.classList.add("no-results-message");
     searchResults.appendChild(message);
+    const paginationSection = document.querySelector(".pagination-section");
+    paginationSection.style.display = "none";
+  } else {
+    const paginationSection = document.querySelector(".pagination-section");
+    paginationSection.style.display = "block";
   }
 }
 
 const searchInput = document.querySelector(".search__input");
 searchInput.addEventListener("input", searchProducts);
-
 
 
 
