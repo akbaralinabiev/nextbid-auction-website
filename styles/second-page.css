@@ -178,6 +178,7 @@ button {
 .search-1 {
   display: none;
 }
+
 .search {
   display: flex;
   justify-content: center;
@@ -349,9 +350,11 @@ button {
     display: flex;
     flex-direction: column;
   }
+
   .filter-container {
     gap: 50px;
   }
+
   .filter {
     padding: 0 20px;
   }
@@ -793,11 +796,23 @@ button {
 /*****************************Here starts Main Media Responsive***********************/
 /*************************************************************************************/
 
-@media (max-width: 1250px) {
+@media (max-width: 1150px) {
+  .toggle-btn {
+    display: block;
+  }
+
   .navbar {
     width: 100%;
     display: none;
   }
+
+  .navbar-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
   .dropdown-menu {
     display: block;
   }
@@ -812,28 +827,27 @@ button {
 }
 
 @media (max-width: 930px) {
-  .toggle-btn {
-    display: block;
-  }
+
   .navbar-icons {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
   }
+
   #header {
     height: 78px;
     padding: 14px 50px;
   }
+
   #hero {
     padding: 0 50px;
   }
-  .search-container {
-    display: none;
-  }
+
   .dropdown-menu .search-container {
     display: block;
   }
+
   .navbar-icons {
     width: 100%;
     display: flex;
@@ -847,6 +861,10 @@ button {
 }
 
 @media (max-width: 650px) {
+  .login-container {
+    display: none;
+  }
+
   .search-1 {
     display: block;
     display: flex;
@@ -855,6 +873,7 @@ button {
     margin-left: 15px;
     margin-top: 1px;
   }
+
   .search {
     display: none;
   }
@@ -869,19 +888,33 @@ button {
   }
 
   .search__input-1 {
-    width: 190px;
+    width: 185px;
     padding: 8px 15px;
   }
+
   #header .search-container,
   .reg {
     display: none;
   }
+
+  .login {
+    display: block;
+
+
+  }
+
+  .dropdown-menu.open .reg {
+    display: block;
+    width: 200px;
+  }
+
+  .dropdown-menu.open {
+    height: 270px;
+  }
 }
 
 @media (max-width: 574px) {
-  .login-container {
-    display: none;
-  }
+
   #hero {
     height: 500px;
     margin-top: 45px;
@@ -901,10 +934,11 @@ button {
     font-size: 22px;
   }
 
-  .dropdown-menu.open .reg {
+
+  .dropdown-menu .login-container {
     display: block;
-    width: 200px;
   }
+
   #header {
     height: 60px;
     padding: 5px 20px;
@@ -934,9 +968,20 @@ button {
   #header .image {
     width: 80px;
   }
+
   .current-goods {
-    margin: 100px 0 0 0;
+    margin: 85px 0 0 0;
     text-align: center;
     padding: 0 40px;
+  }
+  .current-goods h2 {
+    font-weight: 800;
+    color: #191919;
+    font-size: 26px;
+  }
+  
+  .current-goods p {
+    font-size: 17px;
+    padding: 0 50px;
   }
 }
