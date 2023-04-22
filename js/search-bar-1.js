@@ -3,7 +3,8 @@ function searchProducts() {
   const auctionCards = document.querySelectorAll(".auction-card");
   const searchResults = document.querySelector(".search__results");
   const paginationSection = document.querySelector(".pagination-section");
-
+  const filterSection = document.querySelector(".filter-filter");
+  
   searchInputs.forEach(searchInput => {
     const searchTerm = searchInput.value.toLowerCase();
     let matchFound = false;
@@ -33,8 +34,10 @@ function searchProducts() {
       message.classList.add("no-results-message");
       searchResults.appendChild(message);
       paginationSection.style.display = "none";
+      filterSection.style.display = "none";
     } else {
       paginationSection.style.display = "block";
+      filterSection.style.display = "block";
     }
   });
 }
