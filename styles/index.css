@@ -336,11 +336,10 @@ body {
     padding: 8px 20px 8px;
   }
   .wrapper-choice h4{
-    font-size: 14px;
     margin-bottom: 0;
   }
   .wrapper-choice{
-    padding: 4px 15px 4px;
+    padding: 7px 15px 7px;
     border: 1px solid #00000031;
     border-bottom: 3px solid #128777;
   }
