@@ -178,21 +178,27 @@ body {
 /*************************************************************************************/
 
 .dropdown-menu {
-    border: none;
-    margin-top: 0;
-    display: none;
-    position: absolute;
-    height: 0;
-    width: 100%;
-    right: 2rem;
-    padding: 0;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -webkit-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -moz-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -ms-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -o-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
+  background-color: #f2f2f2;
+  border-radius: 0;
+  border: none;
+  margin-top: 0;
+  display: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  right: 2rem;
+  padding: 0;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
   
   .dropdown-menu.open {
     height: 200px;
@@ -262,6 +268,56 @@ body {
   .current-goods p{
     font-size: 20px;
   }
+
+/*************************************************************************************/
+/*****************************Here starts Wrapper************************************/
+/*************************************************************************************/
+
+
+
+.wrapper{
+  padding: 0 80px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.wrapper-choice{
+  padding: 10px 20px 0;
+  border: 1px solid #00000031;
+  border-bottom: 3px solid #128777;
+}
+.wrapper-choice:hover{
+  background-color: #00000009;
+}
+
+.wrapper-choice h4{
+  font-size: 18px;
+}
+
+.wrapper-choice a{
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-blue) var(--custom-white);
+}
+*::-webkit-scrollbar-track {
+  background-color: var(--custom-white);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue) ;
+  border-radius: 20px;
+  border: 3px solid var(--custom-white);
+}
+
 
 /*************************************************************************************/
 /*****************************Here starts Cards************************************/
@@ -538,7 +594,12 @@ body {
       font-weight: 500;
     }
   }
-  
+
+/*************************************************************************************/
+/*****************************Here starts Slide Section************************************/
+/*************************************************************************************/
+
+
 
 /*************************************************************************************/
 /*****************************Here starts Contact Section************************************/
@@ -890,78 +951,131 @@ body {
 /*****************************Here starts Main Media Responsive***********************/
 /*************************************************************************************/
 
+@media (max-width: 1150px) {
+  .toggle-btn {
+    display: block;
+  }
 
-
-@media (max-width: 1250px) {
   .navbar {
     width: 100%;
+    display: none;
   }
-    .dropdown-menu {
-      display: block;
-    }
-  
-    .dropdown-menu .search-container {
-      display: block;
-    }
-  
-    .dropdown-menu.open .reg{
-      display: none;
-    }
+
+  .navbar-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
-  
-  @media (max-width: 930px) {
-    .toggle-btn {
-      display: block;
-    }
-    .navbar-icons {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-    }
-    .navbar {
-      width: 100%;
-      display: none;
-    }
-    #header {
-        height: 78px;
-        padding: 14px 50px;
-    }
-    #hero{
-        padding: 0 50px;
-    }
-    .search-container {
-      display: none;
-    }
-    .dropdown-menu .search-container {
-      display: block;
-    }
-    .navbar-icons {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-    }
-    
-    .dropdown-menu.open .reg{
-      display: none;
-    }
+
+  .dropdown-menu {
+    display: block;
   }
-  
-  @media (max-width: 574px) {
-    .login-container{
-      display: none;
-    }
-    #header .search-container,
-    .reg {
-      display: none;
-    }
-    #hero{
-        height: 500px;
-        margin-top: 45px;
-        padding: 0 20px;
-    }
-    
+
+  .dropdown-menu .search-container {
+    display: block;
+  }
+
+  .dropdown-menu.open .reg {
+    display: none;
+  }
+}
+
+@media (max-width: 930px) {
+
+  .navbar-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  #header {
+    height: 78px;
+    padding: 14px 50px;
+  }
+
+  #hero {
+    padding: 0 50px;
+  }
+
+  .dropdown-menu .search-container {
+    display: block;
+  }
+
+  .navbar-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .dropdown-menu.open .reg {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-container {
+    display: none;
+  }
+
+  .search-1 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 1px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .search__results p {
+    margin: 0;
+    padding: 30px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .search__input-1 {
+    width: 185px;
+    padding: 8px 15px;
+  }
+
+  #header .search-container,
+  .reg {
+    display: none;
+  }
+
+  .login {
+    display: block;
+
+
+  }
+
+  .dropdown-menu.open .reg {
+    display: block;
+    width: 200px;
+  }
+
+  .dropdown-menu.open {
+    height: 270px;
+  }
+}
+
+@media (max-width: 574px) {
+
+  #hero {
+    height: 500px;
+    margin-top: 45px;
+    padding: 0 20px;
+  }
+
   #hero h1 {
     font-size: 50px;
     color: #1fae9b;
@@ -974,38 +1088,59 @@ body {
     font-weight: 400;
     font-size: 22px;
   }
+
+
+  .dropdown-menu .login-container {
+    display: block;
+  }
+
+  #header {
+    height: 60px;
+    padding: 5px 20px;
+  }
+
+  .navbar-icons a {
+    display: block;
+  }
+
+  .navbar-icons {
+    display: flex;
+    justify-content: end;
+  }
+
+  .dropdown-menu.open {
+    height: 270px;
+  }
+
+  .dropdown-menu .search__input-1 {
+    display: block;
+  }
+
+  .toggle-btn {
+    width: 30px;
+  }
+
+  #header .image {
+    width: 80px;
+  }
+
+  .current-goods {
+    margin: 85px 0 0 0;
+    text-align: center;
+    padding: 0 40px;
+  }
+  .current-goods h2 {
+    font-weight: 800;
+    color: #191919;
+    font-size: 26px;
+  }
   
-    .dropdown-menu.open .reg{
-      display: block;
-      width: 200px;
-    }
-    #header {
-      height: 60px;
-      padding: 5px 20px;
-    }
-  
-    .navbar-icons a {
-      display: block;
-    }
-  
-    .navbar-icons {
-      display: flex;
-      justify-content: end;
-    } 
-  
-    .dropdown-menu.open {
-      height: 270px;
-    }
-  
-    .dropdown-menu .search__input-1 {
-      display: block;
-    }
-  
-    .toggle-btn { 
-      width: 30px;
-    }
-  
-    #header .image {
-      width: 80px;
-    }
+  .current-goods p {
+    font-size: 17px;
+    padding: 0 50px;
+  }
 }
+
+/*************************************************************************************/
+/***********************************Responsive Cards**********************************/
+/*************************************************************************************/
