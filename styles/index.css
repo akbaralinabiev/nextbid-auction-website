@@ -276,6 +276,7 @@ body {
 
 
 .wrapper{
+  text-align: center;
   padding: 0 80px 20px;
   display: flex;
   flex-direction: row;
@@ -285,9 +286,11 @@ body {
   white-space: nowrap;
 }
 .wrapper-choice{
-  padding: 10px 20px 0;
+  padding: 7px 20px 7px;
   border: 1px solid #00000031;
   border-bottom: 3px solid #128777;
+ 
+
 }
 .wrapper-choice:hover{
   background-color: #00000009;
@@ -295,6 +298,7 @@ body {
 
 .wrapper-choice h4{
   font-size: 18px;
+  margin-bottom: 0;
 }
 
 .wrapper-choice a{
@@ -318,6 +322,29 @@ body {
   border: 3px solid var(--custom-white);
 }
 
+@media (max-width: 930px) {
+  .wrapper{
+    padding: 0 60px 20px;
+  }
+  .wrapper-choice h4{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper{
+    padding: 8px 20px 8px;
+  }
+  .wrapper-choice h4{
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .wrapper-choice{
+    padding: 4px 15px 4px;
+    border: 1px solid #00000031;
+    border-bottom: 3px solid #128777;
+  }
+}
 
 /*************************************************************************************/
 /*****************************Here starts Cards************************************/
@@ -1125,19 +1152,20 @@ body {
   }
 
   .current-goods {
-    margin: 85px 0 0 0;
+    margin: 30px 20px;
     text-align: center;
-    padding: 0 40px;
+
   }
   .current-goods h2 {
     font-weight: 800;
     color: #191919;
     font-size: 26px;
+    margin-bottom: 0;
   }
   
   .current-goods p {
     font-size: 17px;
-    padding: 0 50px;
+    margin-top: 0;
   }
 }
 
