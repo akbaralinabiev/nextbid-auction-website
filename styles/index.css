@@ -1177,6 +1177,7 @@ body {
 
 
   #cards {
+    width: 1250px;
     height: auto;
     margin: 0;
     display: flex;
@@ -1185,6 +1186,7 @@ body {
   }
   
   .card-container {
+    width: 1250px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -1200,7 +1202,7 @@ body {
     flex-basis: calc(50% - 16px);
     margin-bottom: 24px;
     min-width: 280px;
-    max-width: 400px;
+    max-width: 260px;
   }
   .card {
     display: flex;
