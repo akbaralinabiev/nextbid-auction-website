@@ -189,7 +189,7 @@ body {
   right: 2rem;
   padding: 0;
   overflow: hidden;
-  /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -ms-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -197,7 +197,7 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -o-border-radius: 0; */
+  -o-border-radius: 0;
 }
   
   .dropdown-menu.open {
@@ -1171,3 +1171,111 @@ body {
 /*************************************************************************************/
 /***********************************Responsive Cards**********************************/
 /*************************************************************************************/
+
+
+@media(max-width:574px){
+
+
+  #cards {
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 5px; 
+    min-width: 100%;
+  }
+  
+
+  .card {
+    background-color: transparent;
+    flex-basis: calc(50% - 16px);
+    margin-bottom: 24px;
+    min-width: 280px;
+    max-width: 400px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .auction-card {
+    width: 300px; 
+    margin-right: 10px;
+    scroll-snap-align: start;
+  }
+  .auction-card-img img{
+    width: 230px;
+    height: 230px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .auction-card-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    width: 230px;
+    height: 230px;
+  }
+  .card-title {
+    width: 230px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: start;
+    }
+  .current-price-p p{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    width: 230px;
+  }
+
+  .current-price-p .card-text-2{
+    display: none;
+  }
+  .card-bid{
+    display: none;
+  }
+  .last-bid{
+    font-size: 16px;
+  }
+  .like-button {
+    top: 32px;
+    right: 80px;
+  }
+  
+  .like-count {
+    position: absolute;
+    top: 35px;
+    right: 62px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+ 
+  
+}
+
+
+
+
