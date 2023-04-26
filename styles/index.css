@@ -273,6 +273,10 @@ body {
 /*****************************Here starts Wrapper************************************/
 /*************************************************************************************/
 
+.card-content-1{
+  display: flex;
+  justify-content: center;
+}
 
 .wrapper{
   display: flex;
@@ -303,6 +307,9 @@ body {
 .wrapper-choice a{
   text-decoration: none;
 }
+.first-choice{
+  margin-left: 20px;
+}
 
 ::-webkit-scrollbar {
   background-color: transparent;
@@ -321,17 +328,12 @@ body {
   border: 3px solid var(--custom-white);
 }
 
-@media (max-width: 1500px) {
-  .wrapper{
-    padding: 0 60px 20px;
-    display: flex;
-    justify-content: start;
-  }
-}
 
 @media (max-width: 930px) {
+  .first-choice{
+    margin-left: 40px;
+  }
   .wrapper{
-    padding: 0 60px 20px;
     display: flex;
     justify-content: start;
   }
@@ -341,8 +343,10 @@ body {
 }
 
 @media (max-width: 650px) {
+  .first-choice{
+    margin-left: 20px;
+  }
   .wrapper{
-    padding: 8px 20px 8px;
     display: flex;
     justify-content: start;
   }
@@ -1020,6 +1024,12 @@ body {
 
 @media (max-width: 930px) {
 
+  .card-content{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
   .navbar-icons {
     width: 100%;
     display: flex;
@@ -1053,6 +1063,11 @@ body {
 }
 
 @media (max-width: 650px) {
+  .card-content{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+  }
   .login-container {
     display: none;
   }
@@ -1189,6 +1204,7 @@ body {
   .card-content{
     display: flex;
     justify-content: center;
+    padding: 0 ;
   }
 
   .card {
