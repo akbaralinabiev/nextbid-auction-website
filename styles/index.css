@@ -286,6 +286,7 @@ button {
   margin-bottom: 20px;
 }
 .wrapper-choice {
+  margin-right: 12px;
   padding: 7px 20px 7px;
   border: 1px solid #00000031;
   border-bottom: 3px solid #128777;
