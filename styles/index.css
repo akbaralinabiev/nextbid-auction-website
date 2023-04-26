@@ -601,7 +601,7 @@ body {
   
   @media (max-width: 574px) {
     .intro {
-      margin-top: 10px;
+      margin-top: 50px;
       background-image: linear-gradient(to left, #06393231, #063c35ba),
         url("/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
       background-position: top 35% right 0;
@@ -1206,6 +1206,9 @@ body {
     justify-content: center;
     padding: 0 ;
   }
+  .cards{
+    padding: 0 20px;
+  }
 
   .card {
     background-color: transparent;
@@ -1217,9 +1220,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    border: none;
     border-radius: 5px;
-    padding: 0;
+    padding: 20px 0;
   }
 
 
@@ -1267,14 +1269,14 @@ body {
     font-size: 16px;
   }
   .like-button {
-    top: 32px;
-    right: 80px;
+    top: 28px;
+    right: 55px;
   }
   
   .like-count {
     position: absolute;
-    top: 35px;
-    right: 62px;
+    top:30px;
+    right: 35px;
     font-size: 16px;
     font-weight: 500;
   }
