@@ -277,13 +277,15 @@ body {
 
 .wrapper{
   text-align: center;
-  padding: 0 80px 20px;
+  /* padding: 0 80px 20px; */
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 20px;
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
+  margin-bottom: 20px;
 }
 .wrapper-choice{
   padding: 7px 20px 7px;
@@ -322,9 +324,19 @@ body {
   border: 3px solid var(--custom-white);
 }
 
+@media (max-width: 1500px) {
+  .wrapper{
+    padding: 0 60px 20px;
+    display: flex;
+    justify-content: start;
+  }
+}
+
 @media (max-width: 930px) {
   .wrapper{
     padding: 0 60px 20px;
+    display: flex;
+    justify-content: start;
   }
   .wrapper-choice h4{
     font-size: 16px;
@@ -334,6 +346,8 @@ body {
 @media (max-width: 650px) {
   .wrapper{
     padding: 8px 20px 8px;
+    display: flex;
+    justify-content: start;
   }
   .wrapper-choice h4{
     margin-bottom: 0;
@@ -586,7 +600,7 @@ body {
   
   @media (max-width: 574px) {
     .intro {
-      margin-top: 100px;
+      margin-top: 10px;
       background-image: linear-gradient(to left, #06393231, #063c35ba),
         url("/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
       background-position: top 35% right 0;
@@ -1175,32 +1189,13 @@ body {
 
 @media(max-width:574px){
 
-
-  #cards {
-    width: 1250px;
-    height: auto;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .card-container {
-    width: 1250px;
+  .card-content{
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 0 5px; 
-    min-width: 100%;
   }
-  
 
   .card {
     background-color: transparent;
-    flex-basis: calc(50% - 16px);
-    margin-bottom: 24px;
     min-width: 280px;
     max-width: 260px;
   }
@@ -1208,20 +1203,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
+    margin: 0;
+    border: none;
     border-radius: 5px;
+    padding: 0;
   }
 
-  .auction-card {
-    width: 300px; 
-    margin-right: 10px;
-    scroll-snap-align: start;
-  }
+
   .auction-card-img img{
-    width: 230px;
-    height: 230px;
+    width: 228px;
+    height: 228px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1235,6 +1226,7 @@ body {
     gap: 14px;
     width: 230px;
     height: 230px;
+    border: 1px solid #00000016;
   }
   .card-title {
     width: 230px;
@@ -1249,7 +1241,6 @@ body {
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
-    gap: 10px;
     width: 230px;
   }
 
@@ -1274,8 +1265,6 @@ body {
     font-size: 16px;
     font-weight: 500;
   }
- 
-  
 }
 
 
