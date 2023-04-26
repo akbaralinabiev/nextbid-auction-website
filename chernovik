@@ -1,0 +1,101 @@
+
+    <section class="card-content">
+      <div class="wrapper">
+      <!-- ............................................................................ -->
+      <div class="card auction-card">
+        <div class="auction-card-img">
+          <a class="" href="#"><img src="https://robohash.org/13" alt="Product Image" style="background-color: #d4f8f4;"></a>
+        </div>
+        <div class="card-details">
+          <a class="like-button">
+            <img class="like1-icon" src="/icons/like1.svg" alt="">
+          </a>
+          <span class="like-count">0</span>
+          <h3 class="card-title">Machinex</h3>
+          <div class="current-price-p">
+            <div class="stroke"></div>
+            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
+            <p class="card-text">Last bid: <span class="current-price last-bid">$90.00</span></p> 
+          </div>
+          <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
+          <div class="card-bid">
+            <input type="number" class="bid-input" placeholder="Offer a price">
+            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
+          </div>
+          <p class="card-text-last card-text">Closing time:    <span class="countdown-timer">    </span></p>
+        </div>
+      </div>
+      <!-- ............................................................................ -->
+      <div class="card auction-card">
+        <div class="auction-card-img">
+          <a class="" href="#"><img src="https://robohash.org/12" alt="Product Image" style="background-color: #eef8d4;"></a>
+        </div>
+        <div class="card-details">
+          <a class="like-button">
+            <img class="like1-icon" src="/icons/like1.svg" alt="">
+          </a>
+          <span class="like-count">0</span>
+          <h3 class="card-title">Turboforce</h3>
+          <div class="current-price-p">
+            <div class="stroke"></div>
+            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
+            <p class="card-text">Last bid: <span class="current-price last-bid">$110.00</span></p> 
+          </div>
+          <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
+          <div class="card-bid">
+            <input type="number" class="bid-input" placeholder="Offer a price">
+            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
+          </div>
+          <p class="card-text-last card-text">Closing time: <span class="countdown-timer"></span></p>
+        </div>
+      </div>
+      <!-- ............................................................................ -->
+      <div class="card auction-card">
+        <div class="auction-card-img">
+          <a class="" href="#"><img src="https://robohash.org/93.105.176.244.png" alt="Product Image" style="background-color: #e3d4f8;"></a>
+        </div>
+        <div class="card-details">
+          <a class="like-button">
+            <img class="like1-icon" src="/icons/like1.svg" alt="">
+          </a>
+          <span class="like-count">0</span>
+          <h3 class="card-title">Galactron</h3>
+          <div class="current-price-p">
+            <div class="stroke"></div>
+            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
+            <p class="card-text">Last bid: <span class="current-price last-bid">$47.00</span></p> 
+          </div>
+          <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
+          <div class="card-bid">
+            <input type="number" class="bid-input" placeholder="Offer a price">
+            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
+          </div>
+          <p class="card-text-last card-text">Closing time:<span class="countdown-timer"></span></p>
+        </div>
+      </div>
+      <!-- ............................................................................ -->
+      <div class="card auction-card">
+        <div class="auction-card-img">
+          <a class="" href="#"> <img src="https://robohash.org/1" alt="Product Image" style="background-color: #f8d4e9;"></a>
+        </div>
+        <div class="card-details">
+          <a class="like-button">
+            <img class="like1-icon" src="/icons/like1.svg" alt="">
+          </a>
+          <span class="like-count">0</span>
+          <h3 class="card-title">Cybernova</h3>
+          <div class="current-price-p">
+            <div class="stroke"></div>
+            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
+            <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+          </div>
+          <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
+          <div class="card-bid">
+            <input type="number" class="bid-input" placeholder="Offer a price">
+            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
+          </div>
+          <p class="card-text-last card-text">Closing time: <span class="countdown-timer"></span></p>
+        </div>
+      </div>
+    </div>
+    </section>
