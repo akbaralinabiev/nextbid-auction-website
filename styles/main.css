@@ -1300,6 +1300,9 @@ textarea.form-control {
   .last-bid {
     font-size: 16px;
   }
+  .card-text-last{
+    margin-top: 0;
+  }
   .like-button {
     top: 28px;
     right: 55px;
@@ -1312,4 +1315,5 @@ textarea.form-control {
     font-size: 16px;
     font-weight: 500;
   }
+  
 }
