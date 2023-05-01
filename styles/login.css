@@ -181,6 +181,19 @@ form .policy a{
     background-color: #1fa08f;
   }
   
+.guest{
+    align-items: center;
+}
+.guest a{
+    text-decoration: none;
+}
+.guest a p{
+    border-bottom: 1px solid;
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+}
+
 
   @media(max-width:574px){
     header{
