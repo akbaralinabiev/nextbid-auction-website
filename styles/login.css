@@ -194,8 +194,8 @@ form .policy a{
     font-weight: normal;
 }
 
-
-  @media(max-width:574px){
+/*****************************************************************************************************************/
+@media(max-width:574px){
     header{
         padding: 0 20px;
     }
@@ -207,6 +207,8 @@ form .policy a{
     
     .form-container {
       padding: 20px;
+      min-width: 300px;
+      width: 340px;
     }
     .form-login h2{
         color: #24ad9a;
