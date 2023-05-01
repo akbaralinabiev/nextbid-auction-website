@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/main.css">
   <title>Nextbid - Auction Website</title>
 </head>
 
@@ -30,11 +30,17 @@
     <div class="navbar-links">
       <ul class="navbar">
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="second-page.html">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="navbar-icons">
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Search for a product">
+      </div>
+      <div class="search-1">
+            <input type="text" class="search__input-1" placeholder="Search">
+          </div>
       <a href="cart.html"><img src="/icons/shopping.svg" alt=""></a>
       <div class="login-container login-button">
         <a href="login.html"><button class="reg">Login</button></a>
@@ -49,13 +55,12 @@
       <li><a href="about.html">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
-        <div class="login-container login-button">
+        <div class="login-container login-button login">
           <a href="login.html"><button class="reg">Login</button></a>
         </div>
       </li>
     </div>
   </section>
-
 
   <!-- ....................................Here starts hero section........................................ -->
 
@@ -64,7 +69,7 @@
     <h1>Bid Smart, Save Big.</h1>
     <h4>EVERY PURCHASE SUPPORTS THE NEXTBID MISSION</h4>
   </section>
-  
+
   <!-- ....................................Here starts Current Goods........................................ -->
 
   <div class="current-goods">
@@ -134,6 +139,7 @@
 
 
   <!-- ....................................Here starts products section........................................ -->
+  <div class="search__results"></div>
 
   <section class="card-content">
     <div class="wrapper cards">
@@ -240,7 +246,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""> <img src="https://robohash.org/4" alt="Product Image" style="background-color: #d4f8e4;"></a>
+          <a class="" href=""> <img src="https://robohash.org/4" alt="Product Image"
+              style="background-color: #d4f8e4;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -251,7 +258,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$112.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$112.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -264,7 +271,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/5" alt="Product Image" style="background-color: #f1d4f8;"></a>
+          <a class="" href=""><img src="https://robohash.org/5" alt="Product Image"
+              style="background-color: #f1d4f8;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -275,7 +283,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$105.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$105.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -288,7 +296,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/6" alt="Product Image" style="background-color: #f8f3d4;"></a>
+          <a class="" href=""><img src="https://robohash.org/6" alt="Product Image"
+              style="background-color: #f8f3d4;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -299,7 +308,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$120.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$120.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -312,7 +321,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""> <img src="https://robohash.org/7" alt="Product Image" style="background-color: #d4f8f4;"></a>
+          <a class="" href=""> <img src="https://robohash.org/7" alt="Product Image"
+              style="background-color: #d4f8f4;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -323,7 +333,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -342,12 +352,13 @@
     <div class="row-23"></div>
   </div>
 
- <!-- ....................................Here starts products section........................................ -->
+  <!-- ....................................Here starts products section........................................ -->
   <section class="card-content">
     <div class="wrapper cards">
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/18" alt="Product Image" style="background-color: #d4f8d9;"></a>
+          <a class="" href=""><img src="https://robohash.org/18" alt="Product Image"
+              style="background-color: #d4f8d9;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -358,7 +369,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$55.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$55.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -371,7 +382,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/17" alt="Product Image" style="background-color: #d4d7f8;"></a>
+          <a class="" href=""><img src="https://robohash.org/17" alt="Product Image"
+              style="background-color: #d4d7f8;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -382,7 +394,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$65.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$65.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -395,7 +407,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/16" alt="Product Image" style="background-color: #e7d4f8;"></a>
+          <a class="" href=""><img src="https://robohash.org/16" alt="Product Image"
+              style="background-color: #e7d4f8;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -406,7 +419,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$60.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$60.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -419,7 +432,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/15" alt="Product Image" style="background-color: #f8d4de;"></a>
+          <a class="" href=""><img src="https://robohash.org/15" alt="Product Image"
+              style="background-color: #f8d4de;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -430,7 +444,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$40.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$40.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -443,7 +457,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/14" alt="Product Image" style="background-color: #d4f8da;"></a>
+          <a class="" href=""><img src="https://robohash.org/14" alt="Product Image"
+              style="background-color: #d4f8da;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -454,7 +469,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$30.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$30.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -467,7 +482,8 @@
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/11" alt="Product Image" style="background-color: #d4f8f4;"></a>
+          <a class="" href=""><img src="https://robohash.org/11" alt="Product Image"
+              style="background-color: #d4f8f4;"></a>
         </div>
         <div class="card-details">
           <a class="like-button">
@@ -478,7 +494,7 @@
           <div class="current-price-p">
             <div class="stroke"></div>
             <p class="card-text">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$20.00</span></p> 
+            <p class="card-text">Last bid: <span class="current-price last-bid">$20.00</span></p>
           </div>
           <p class="card-text-1">Closing Time: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
           <div class="card-bid">
@@ -532,7 +548,6 @@
     </form>
     </div>
   </section>
-
 
   <!-- ....................................Here starts footer........................................ -->
 
@@ -589,17 +604,18 @@
   <!--*************************************Here starts js links***************************************-->
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/bid.js"></script>
-  <script src="/js/scroll.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/bid.js"></script>
+  <script src="/js/scroll.js"></script>
   <script src="/js/top-to-scroll.js"></script>
   <script src="/js/like-counter.js"></script>
   <script src="/js/toggle-btn.js"></script>
-  <script src="/js/search-bar.js"></script>
-  <script src="/js/filter.js"></script>
+  <script src="js/pagination.js"></script>
+  <script src="js/search-filter.js"></script>
+
 </body>
 
 </html>

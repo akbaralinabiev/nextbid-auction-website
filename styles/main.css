@@ -172,7 +172,6 @@ button {
   background-color: #f5f5f5;
 }
 
-
 /*************************************************************************************/
 /*****************************Here starts Search Bar**********************************/
 /*************************************************************************************/
@@ -219,7 +218,6 @@ button {
   font-size: 16px;
   text-align: center;
 }
-
 
 /*************************************************************************************/
 /*****************************Here starts Dropdown Menu************************************/
@@ -309,8 +307,7 @@ button {
 /*************************************************************************************/
 
 .current-goods {
-  margin-top: 80px;
-  margin-bottom: 40px;
+margin: 80px;
   text-align: center;
 }
 .current-goods p {
@@ -432,97 +429,6 @@ button {
     border-bottom: 3px solid #128777;
   }
 }
-
-/*************************************************************************************/
-/*****************************Here starts Filter Design************************************/
-/*************************************************************************************/
-
-.filter-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.filter-filter {
-  padding: 0 20px;
-}
-
-.inputs {
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-}
-
-.filter-container button {
-  min-width: 140px;
-  height: 45px;
-  font-size: 16px;
-  background-color: #1fae9b;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 10px 12px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-
-.inputs input {
-  padding: 10px 12px;
-  width: auto;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.filter-container input:focus,
-.filter-container button:focus {
-  outline: none;
-  border-color: #1fae9b;
-}
-
-.filter-container button {
-  background-color: #1fae9b;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.filter-container button:hover {
-  background-color: #1a9887;
-}
-
-@media (max-width: 835px) {
-  .inputs {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .filter-container {
-    gap: 50px;
-  }
-
-  .filter {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 574px) {
-  .filter-container {
-    gap: 20px;
-  }
-
-  .inputs {
-    width: 160px;
-  }
-}
-
-
 
 /*************************************************************************************/
 /*****************************Here starts Cards************************************/
