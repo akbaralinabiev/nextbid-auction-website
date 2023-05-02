@@ -14,7 +14,6 @@ header{
     background-image: url(/images/alessio-soggetti-gdE-5Oui1Y0-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -181,7 +180,7 @@ form .policy a{
   }
   .btn-1{
     width: 100%;
-    padding: 10px 0;
+    padding: 13px 0;
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
@@ -195,7 +194,11 @@ form .policy a{
     -o-border-radius: 4px;
     font-size: 16px;
     color: #128777;
-    margin-top: 20px;
+    margin-top: px;
+    border: 1px solid #128777;
+}
+.btn-1:hover{
+  background-color: #f3f3f36b;
 }
 #forgot-password p{
   text-align: center;
@@ -211,12 +214,24 @@ form .policy a{
 }
 .reset-psw{
   text-decoration: none;
-  color: #e91616;
+  color: #ff6262;
   font-size: 15px;
 }
   
   .btn:hover {
     background-color: #1fa08f;
+  }
+  .resend-email-text-div{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 10px;
+
+  }
+  .resend-email-text-div a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #7c0197;
   }
   
 .guest{
@@ -294,6 +309,9 @@ form .policy a{
 /*****************************************************************************************************************/
 
 @media(max-width:574px){
+    #header{
+      height: 0vh;
+    }
     
     .checkbox{
         width: 16px;

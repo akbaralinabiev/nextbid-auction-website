@@ -274,21 +274,17 @@ button {
 /*************************************************************************************/
 
 #hero {
-  padding-top: 80px;
-  background-image: linear-gradient(
-      to left,
-      rgba(73, 73, 73, 0.269),
-      rgba(0, 0, 0, 0.449)
-    ),
-    url("/images/artem-beliaikin-55ZdeceBz24-unsplash.jpg");
+  background-image: linear-gradient(      to left,      rgba(73, 73, 73, 0.269),      rgba(0, 0, 0, 0.449)    ),    url("/images/artem-beliaikin-55ZdeceBz24-unsplash.jpg");
   background-position: top 35% right 0;
   background-size: cover;
-  height: 600px;
+  height: 450px;
   align-items: flex-start;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
+  padding: 40px 80px;
+  margin: 0 80px;
+  margin-top: 100px;
 }
 
 #hero h1 {
@@ -301,6 +297,165 @@ button {
   padding: 25px 0;
   font-weight: 600;
 }
+
+/*************************************************************************************/
+/*****************************Here starts Brands Section************************************/
+/*************************************************************************************/
+.brands-mobile{
+  display: none;
+  padding-bottom: 0;
+}
+.brands {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.brands-text{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.first-row, .second-row {
+  display: flex;
+  justify-content: center;
+}
+
+.first-row img, .second-row img {
+  width: 170px;
+  height: auto;
+  margin: 10px;
+  padding: 20px 40px;
+  background-color: #eaeaea;
+}
+
+@media screen and (max-width: 574px) {
+  .first-row, .second-row {
+    flex-wrap: wrap;
+  }
+
+  .first-row img, .second-row img {
+    width: 45%;
+    margin: 5px;
+  }
+}
+
+@media(max-width:1280px){
+  #hero {
+    padding: 40px 80px;
+    margin: 0 60px;
+    margin-top: 100px;
+  }
+  .first-row img, .second-row img {
+    width: 130px;
+    height: auto;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+  }
+}
+@media(max-width:1000px){
+  .first-row img, .second-row img {
+    width: 110px;
+    height: auto;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+  }
+  #hero {
+    padding: 40px 80px;
+    margin: 0 50px;
+    margin-top: 100px;
+  }
+}
+@media(max-width:880px){
+  #hero {
+    padding: 40px 80px;
+    margin: 0 40px;
+    margin-top: 100px;
+  }
+  .brands {
+    padding: 30px 40px;
+  }
+  .first-row img, .second-row img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+  }
+  .brands-text{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+}
+
+@media(max-width:818px){
+  .first-row img, .second-row img {
+    width: 90px;
+    height: auto;
+    /* margin: 10px; */
+    padding: 10px 20px;
+    background-color: #eaeaea;
+  }
+  .brands-hide {
+    display: none;
+  }
+  .brands-mobile {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .first-row-brands-mobile{
+    padding: 0;
+    justify-content: space-around;
+  }
+  .first-row-brands-mobile img{
+    width: 70px;
+    height: auto;
+    margin: 7px;
+    padding: 5px 8px;
+    background-color: #eaeaea;
+  }
+  .brands-text{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  #hero {
+    padding: 40px 80px;
+    margin: 0 30px;
+    margin-top: 100px;
+  }
+}
+
+@media(max-width:574px){
+  #hero {
+    padding: 40px 80px;
+    margin: 0;
+    margin-top: 100px;
+  }
+  .brands {
+    padding: 30px 20px;
+  }
+  .brands-mobile{
+    padding: 0;
+  }
+  .brands-text{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .brands-text h4{
+    font-size: 16px;
+  }
+}
+
+
+
+
 
 /*************************************************************************************/
 /*****************************Here starts Current Goods Section************************************/
