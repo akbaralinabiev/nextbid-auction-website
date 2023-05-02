@@ -20,11 +20,24 @@
 
             <form id="contact-form" method="post" class="contact-form">
                 <label class="one-label" for="email">Email*</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com" required>
                 <label class="one-label" for="name">Password*</label>
-                <input type="password" name="password" class="form-control" id="password" placeholder="*********">
-                <!-- <button type="submit" class="btn">Sign In</button> -->
-                <a href="#" type="submit" class="btn">Sign In</a>
+                <input type="password" name="password" class="form-control" id="password" placeholder="⁕⁕⁕⁕⁕⁕⁕⁕⁕⁕⁕" required>
+                <div class="Reset-Password">
+                    <a class="reset-psw" href="#" id="forgot-password-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn">Sign In</button>
+
+                <div class="login-method">
+                    <div class="login-method-divider">
+                        <div class="login-method-divider-line"></div>
+                        <div class="login-method-divider-text">or sign in with</div>
+                        <div class="login-method-divider-line"></div>
+                      </div>
+                    <button class="login-method-btn" type="button"><img src="icons/logos_google-icon.svg" alt="">Google</button>
+                    <button class="login-method-btn" type="button"><img src="icons/logos_facebook.svg" alt="">Facebook</button>
+                </div>
             </form>
             <br>
             <div class="switch-button">
@@ -48,18 +61,32 @@
                     <input class="checkbox" type="checkbox">
                     <p>I accept all <a href="#">terms</a> & <a href="#">condition</a></p>
                 </div>
-                <!-- <button type="submit" class="btn">Register</button> -->
-                <a href="#" type="submit" class="btn">Create account</a>
+                <button type="submit" class="btn">Create Account</button>
+                <!-- <a href="#" type="submit" class="btn">Create account</a> -->
             </form>
             <div class="switch-button-1">
                 <p>If you already have an account &nbsp;</p>
                 <button id="login-btn">Login</button>
             </div>
         </div>
-   
-    <div class="guest">
-        <a href="index.html"><p>Continue as a Guest</p></a>
-    </div>
+
+        <div id="forgot-password" class="form-container form-login container animate__animated">
+            <h2>Reset Password</h2>
+            <p>Enter your email address associated with your account. We'll send you a link to reset your password</p>
+
+            <form id="contact-form" method="post" class="contact-form">
+                <label class="one-label" for="email">Email*</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
+
+                <button type="submit" class="btn">Submit</button>
+                <!-- <a href="#" type="submit" class="btn">Create account</a> -->
+                <button id="back-to-login-btn" type="button" class="btn-1">Back to Login</button>
+            </form>
+            <!-- <div class="switch-button-1">
+                <p>If you already have an account &nbsp;</p>
+                <button id="login-btn">Login</button>
+            </div> -->
+        </div>
  </header>
     <script src="/js/login.js"></script>
 </body>

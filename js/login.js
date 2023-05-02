@@ -2,6 +2,7 @@ const loginForm = document.getElementById('login-form');
 const registerForm = document.getElementById('register-form');
 const loginBtn = document.getElementById('login-btn');
 const registerBtn = document.getElementById('register-btn');
+const resetPasswordForm = document.getElementById('forgot-password');
 
 // Show login form and hide register form by default
 loginForm.style.display = 'block';
@@ -33,3 +34,12 @@ loginBtn.addEventListener('click', () => {
   }, 100);
 });
 
+document.getElementById('forgot-password-link').addEventListener('click', () => {
+  loginForm.style.display = 'none';
+  registerForm.style.display = 'none';
+  resetPasswordForm.style.display = 'block';
+});
+document.getElementById('back-to-login-btn').addEventListener('click', () => {
+  resetPasswordForm.style.display = 'none';
+  loginForm.style.display = 'block';
+});
