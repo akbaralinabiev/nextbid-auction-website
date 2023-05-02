@@ -280,8 +280,7 @@ button {
 /*************************************************************************************/
 
 #hero {
-  background-image: linear-gradient(to left, rgba(60, 60, 60, 0), rgba(0, 0, 0, 0.622)), url("/images/auction.jpg");
-  /* background-position: top 35% right 0; */
+  background-image: linear-gradient(to left, rgba(60, 60, 60, 0), rgba(0, 0, 0, 0.622)), url("/images/auction\ 1.png");
   background-size: cover;
   height: 450px;
   align-items: flex-start;
@@ -293,7 +292,9 @@ button {
   margin: 0 80px;
   margin-top: 100px;
 }
-
+.hero{
+  text-align: left;
+}
 
 #hero h1 {
   color: #1fae9b;
@@ -1320,9 +1321,16 @@ textarea.form-control {
 
 @media (max-width: 574px) {
   #hero {
-    height: 300px;
-    margin-top: 45px;
-    padding: 0 20px;
+      margin-top: 50px;
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
   }
 
   #hero h1 {
@@ -1334,7 +1342,7 @@ textarea.form-control {
   #hero h4 {
     color: rgb(209, 209, 209);
     padding: 5px 0;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     margin-right: 150px;
   }
@@ -1388,6 +1396,12 @@ textarea.form-control {
     font-size: 17px;
     margin-top: 0;
   }
+}
+
+.last-div{
+  display: flex;
+  justify-content: center;
+  background-color: #ecebeb;
 }
 
 /*************************************************************************************/
