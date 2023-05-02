@@ -65,12 +65,9 @@ form .policy a{
 }
 .switch-button{
     display:flex;
+    justify-content: center;
     flex-direction: row;
-}
-.switch-button-1{
-    display:flex;
-    flex-direction: row;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 #register-btn {
   color: #128777;
@@ -79,19 +76,22 @@ form .policy a{
   font-size: 16px;
   background-color: transparent;
 }
+.switch-button-1{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
 #login-btn{
-    color: #128777;
+  color: #128777;
   border: none;
   cursor: pointer;
   font-size: 16px;
   background-color: transparent;
 }
-
-
 .switch-button p{
     font-size: 16px;
 }
-
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -157,9 +157,6 @@ form .policy a{
     color: #a2a2a2;
   }
   
-  textarea.form-control {
-    resize: none;
-  }
   
   .btn {
     width: 100%;
@@ -184,6 +181,7 @@ form .policy a{
   }
   .btn-1{
     width: 100%;
+    padding: 10px 0;
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
@@ -285,6 +283,9 @@ form .policy a{
   justify-content: center; /* add this */
 }
 
+.login-method-btn:hover{
+  background-color: #e5e5e54e;
+}
 .login-method-btn img {
   margin-right: 8px;
 }
