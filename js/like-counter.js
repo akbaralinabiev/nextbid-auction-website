@@ -1,28 +1,29 @@
-const likeButtons = document.querySelectorAll('.like-button');
-const numberOfLikesElements = document.querySelectorAll('.like-count');
+let likeCounts = document.querySelectorAll('.like-count');
+let likeButtons = document.querySelectorAll('.like-button');
 
 for (let i = 0; i < likeButtons.length; i++) {
-  const likeBtn = likeButtons[i];
-  const numberOfLikesElement = numberOfLikesElements[i];
+  let likeCount = parseInt(likeCounts[i].textContent);
+  let hasLiked = false;
+  let regularHeart = likeButtons[i].querySelector('.fa-regular');
+  let solidHeart = likeButtons[i].querySelector('.fa-solid');
 
-  let numberOfLikes = Number.parseInt(numberOfLikesElement.textContent, 10);
-  let isLiked = false;
+  solidHeart.style.display = 'none';
 
-  const likeClick = () => {
-    if (!isLiked) {
-      likeBtn.classList.add('isLiked');
-      numberOfLikes++;
-      numberOfLikesElement.textContent = numberOfLikes;
-      isLiked = !isLiked;
+  likeButtons[i].addEventListener('click', function() {
+    if (!hasLiked) {
+      likeCount++;
+      likeCounts[i].textContent = likeCount;
+      regularHeart.style.display = 'none';
+      solidHeart.style.display = 'inline-block';
+      likeButtons[i].style.color = '#f92a2a';
+      hasLiked = true;
     } else {
-      likeBtn.classList.remove('isLiked');
-      numberOfLikes--;
-      numberOfLikesElement.textContent = numberOfLikes;
-      isLiked = !isLiked;
+      likeCount--;
+      likeCounts[i].textContent = likeCount;
+      regularHeart.style.display = 'inline-block';
+      solidHeart.style.display = 'none';
+      likeButtons[i].style.color = '#000000';
+      hasLiked = false;
     }
-  };
-
-  likeBtn.addEventListener('click', likeClick);
+  });
 }
-
-

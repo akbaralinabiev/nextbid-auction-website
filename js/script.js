@@ -17,9 +17,12 @@ function getRandomClosingTime() {
       const timeRemainingInSeconds = Math.floor((closingTime - now) / 1000);
   
       if (timeRemainingInSeconds <= 0) {
-        countdownTimerElement.textContent = 'Auction Closed';
+        countdownTimerElement.textContent = 'Closed';
+        countdownTimerElement.style.color = 'red';
         return;
       }
+      
+      
   
       const hoursRemaining = Math.floor(timeRemainingInSeconds / 3600);
       const minutesRemaining = Math.floor((timeRemainingInSeconds % 3600) / 60);
