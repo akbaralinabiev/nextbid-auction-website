@@ -575,7 +575,7 @@ margin: 80px;
 @media (max-width: 650px) {
   .middle-p{
   margin-left: 20px;
-  width: 100%;
+  margin-right: 1px;
   }
 
   .middle-p p{
