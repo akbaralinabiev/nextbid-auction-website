@@ -871,6 +871,7 @@ margin: 80px;
   padding: 60px 80px;
   gap: 60px;
 }
+
 .about H2{
   font-size: 35px;
   font-weight: 800;
@@ -881,7 +882,7 @@ margin: 80px;
   margin-bottom: 60px;
   width: 100%;
   padding: 20px;
-  gap: 10px;
+  gap: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
