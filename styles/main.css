@@ -1809,7 +1809,7 @@ textarea.form-control {
 
 @media (max-width: 574px) {
   .cards {
-    padding: 0 10px;
+    padding: 0 10px ;
   }
 
   .card-content {
