@@ -253,8 +253,9 @@ button {
 }
 
 .dropdown-menu.open {
-  height: 200px;
+  height: 150px;
   opacity: 0.95;
+  padding: 10px;
 }
 
 .dropdown-menu li {
@@ -1112,6 +1113,7 @@ margin: 80px;
 @media(max-width: 550px) {
   .about-wrapper{
     padding: 0;
+    margin-bottom: 40px;
   }
   .about{
     padding: 30px 20px;
@@ -1131,6 +1133,7 @@ margin: 80px;
     height: 110px;
   }
   .person-info{
+    align-items: center;
     justify-content: center;
   }
   .person-info h6{
@@ -1148,15 +1151,10 @@ margin: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: auto;
   }
 }
-
-
-
-
-
 
 /*************************************************************************************/
 /*****************************Here starts Contact Section************************************/
@@ -1621,7 +1619,10 @@ textarea.form-control {
   }
 
   .dropdown-menu.open {
-    height: 270px;
+    height: 215px;
+  }
+  #header .image {
+    width: 90px;
   }
 }
 
@@ -1672,7 +1673,7 @@ textarea.form-control {
   }
 
   .dropdown-menu.open {
-    height: 220px;
+    height: 215px;
   }
 
   .dropdown-menu .search__input-1 {
@@ -1684,7 +1685,7 @@ textarea.form-control {
   }
 
   #header .image {
-    width: 80px;
+    width: 65px;
   }
 
   .current-goods {
