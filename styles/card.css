@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 342px;
+    background-color: transparent;
+    flex-basis: calc(50% - 16px);
+    margin-bottom: 24px;
+    min-width: 340px;
+  }
+  
+  .auction-card-img {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .card-title {
+    max-width: 300px;
+    font-size: 23px;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  
+  .card-bid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 300px;
+  }
+  
+  .card-bid input[type="number"]::-webkit-outer-spin-button,
+  .card-bid input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .card-bid input[type="number"] {
+    font-size: 18px;
+    padding: 7px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-bid button {
+    width: 130px;
+    height: 42px;
+    font-size: 16px;
+    background-color: #1fae9b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .card-bid button:hover {
+    background-color: #179383;
+  }
+  
+  .card-details {
+    text-align: left;
+    margin-top: 15px;
+    max-width: 300px;
+    justify-content: space-between;
+  }
+  
+  .card-details p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .product-prices {
+    margin-top: 10px;
+  }
+  
+  .current-price {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .current-price-p {
+    margin-bottom: 15px;
+  }
+  
+  .current-price-p .stroke {
+    padding: 5px 0;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  
+  .current-price-p p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .last-bid-price {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-bid input {
+    border: 1px solid #ababab;
+  }
+  
+  .card-bid input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    font-style: italic;
+  }
+  
+  .card-text-1 {
+    display: none;
+  }
+  
+  .countdown-timer {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4d4d;
+    margin-left: 10px;
+  }
+  
+  .bid-input {
+    width: 140px;
+    height: 42px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: 100%;
+      margin-bottom: 24px;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .like-button {
+    position: absolute;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .like-count {
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup {
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .popup-close button {
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .popup-image {
+    flex: 1;
+  }
+  
+  .popup-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .popup-description {
+    flex: 1;
+    padding: 0 50px;
+  }
+  
+  .popup-description h3 {
+    margin-top: 0;
+  }
+  
+  .popup-description p {
+    margin: 10px 0;
+  }
+  
+  .popup-description .stroke {
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .popup-description .card-bid {
+    margin-top: 20px;
+  }
+
+  .popup-description {
+    width: 1000px;
+    height: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .popup-description .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .popup-description .card {
+    width: 900px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .popup-description .card .auction-card-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 50px;
+  }
+  
+  .popup-description .card .card-details {
+    width: 500px;
+  }
+  
+  .popup-description .card .like-icon-num {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .popup-description .card .like-icon-num .like-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .popup-description .card .like-icon-num .like-button:hover {
+    text-decoration: none;
+  }
+  
+  .popup-description .card .like-icon-num .like1-icon {
+    margin-right: 5px;
+  }
+  
+  .popup-description .card .current-price-p {
+    margin-bottom: 20px;
+  }
+  
+  .popup-description .card .stroke {
+    border-top: 2px dashed black;
+    margin-bottom: 10px;
+  }
+  
+  .popup-description .card-bid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .popup-description .card-bid .bid-input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .popup-description .card-bid button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .popup-description .card-bid button:hover {
+    background-color: #333;
+  }
+  
+  .popup-description .card-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-description .card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .popup-description .card-text-1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-description .card-text-last {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  

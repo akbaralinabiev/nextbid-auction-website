@@ -182,13 +182,14 @@
   <!-- ....................................Here starts products section........................................ -->
   <div class="search__results"></div>
 
+
+
   <section class="card-content">
     <div class="wrapper cards">
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href="#"><img src="https://robohash.org/13" alt="Product Image"
-              style="background-color: #d4f8f4;"></a>
+          <a href="#0"><img src="https://robohash.org/13" alt="Product Image" style="background-color: #d4f8f4;"></a>
         </div>
         <div class="card-details">
           <div class="like-icon-num">
@@ -209,14 +210,13 @@
             <input type="number" class="bid-input" placeholder="Offer a price">
             <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
           </div>
-          <p class="card-text-last card-text">Ends in:<span  id="timer" class="countdown-timer"></span></p>
+          <p class="card-text-last card-text">Ends in:<span id="timer" class="countdown-timer"></span></p>
         </div>
       </div>
       <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
-          <a class="" href="#"><img src="https://robohash.org/12" alt="Product Image"
-              style="background-color: #eef8d4;"></a>
+          <a href="#0"><img src="https://robohash.org/12" alt="Product Image" style="background-color: #eef8d4;"></a>
         </div>
         <div class="card-details">
           <div class="like-icon-num">
@@ -420,6 +420,7 @@
   <!-- ....................................Here starts products section........................................ -->
   <section class="card-content">
     <div class="wrapper cards">
+      <!-- ............................................................................ -->
       <div class="card auction-card">
         <div class="auction-card-img">
           <a class="" href=""><img src="https://robohash.org/18" alt="Product Image"
@@ -710,24 +711,24 @@
             </P>
           </div>
         </div>
-      
 
 
-      <div class="about-info">
-        <div class="person-image">
-          <img src="images/users/windows-c-lUYtNjqxw-unsplash.png" alt="">
-        </div>
-        <div class="person-info">
-          <h4>ALEX SIMMONDS</h4>
-          <h6>ACCOUNT MANAGER</h6>
-          <P>Alex joined Mixd as a Project Manager after
-            spending ten years working in retail management.
-            She is a perpetual perfectionist and prides herself on
-            her great communication skills that ensure clients are always
-            bang up-to-date with progress on their projects.
+
+        <div class="about-info">
+          <div class="person-image">
+            <img src="images/users/windows-c-lUYtNjqxw-unsplash.png" alt="">
+          </div>
+          <div class="person-info">
+            <h4>ALEX SIMMONDS</h4>
+            <h6>ACCOUNT MANAGER</h6>
+            <P>Alex joined Mixd as a Project Manager after
+              spending ten years working in retail management.
+              She is a perpetual perfectionist and prides herself on
+              her great communication skills that ensure clients are always
+              bang up-to-date with progress on their projects.
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
     </div>
@@ -738,28 +739,28 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <form id="contact-form" method="post" class="contact-form">
-        <label class="one-label" for="name">Your Full Name*</label>
-        <input type="text" name="name" class="form-control" id="name" placeholder="Akbarali Nabiev">
-        <div class="form-name-email">
-          <div class="form-group">
-            <label class="one-label" for="email">Your Email*</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
-          </div>
-          <div class="form-group">
-            <label class="one-label" for="name">Phone Number*</label>
-            <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
-          </div>
+    <form action="#" onsubmit="sendMessage(); return false;">
+      <label class="one-label" for="name">Your Full Name*</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+      <div class="form-name-email">
+        <div class="form-group">
+          <label class="one-label" for="email">Your Email*</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com"
+            required>
         </div>
-        <label class="one-label" for="subjet">Subject*</label>
-        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+        <div class="form-group">
+          <label class="one-label" for="name">Phone Number*</label>
+          <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
+        </div>
+      </div>
+      <label class="one-label" for="subjet">Subject*</label>
+      <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
 
-        <label class="one-label" for="button">Message*</label>
-        <textarea name="message" class="form-control" id="message" rows="5"
-          placeholder="Your message here.."></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </div>
-    </form>
+      <label class="one-label" for="button">Message*</label>
+      <textarea name="message" class="form-control" id="message" rows="5"
+        placeholder="Your message here.."></textarea>
+      <input type="submit" class="btn" value="Send Request">
+  </form>
     </div>
   </section>
 
@@ -809,7 +810,7 @@
     </div>
   </footer>
   <div class="last-div">
-    <p>Nextbid. All rights reserved 2023</p>
+    <p>Copyright ©, 2023 by Nexbid - Auction Website.</p>
   </div>
 
   <!--*************************************Here starts top-to button***************************************-->
@@ -824,6 +825,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/contact.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/bid.js"></script>
   <script src="/js/scroll.js"></script>
@@ -832,6 +836,7 @@
   <script src="/js/toggle-btn.js"></script>
   <script src="js/pagination.js"></script>
   <script src="js/search-filter.js"></script>
+  <script src="js/pop-up-screen.js"></script>
 
 </body>
 

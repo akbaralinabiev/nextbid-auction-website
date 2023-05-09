@@ -912,7 +912,7 @@ button {
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 60px 80px;
+  padding: 90px 80px 80px 60px;
   gap: 60px;
 }
 
@@ -1089,7 +1089,7 @@ button {
 @media(max-width: 1200px) {
   .about {
     gap: 20px;
-    padding: 40px 60px;
+    padding: 60px 60px;
   }
 
   .about-wrapper {
@@ -1200,7 +1200,7 @@ button {
   }
 
   .about {
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
 
   .about h2 {
@@ -1912,5 +1912,8 @@ textarea.form-control {
     font-size: 16px;
     font-weight: 500;
   }
-
 }
+
+
+
+
