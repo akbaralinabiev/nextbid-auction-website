@@ -108,7 +108,7 @@ body {
 .navbar li a.active::after,
 .navbar li a:hover::after {
   content: "";
-  width: 35px;
+  width: 40px;
   height: 2px;
   background-color: #1fae9b;
   position: absolute;
@@ -125,6 +125,17 @@ body {
 
 .navbar-icons a {
   margin: 0 20px 0 20px;
+}
+
+.user-profile-icon{
+  width: 34px;
+  background-color: transparent;
+}
+
+@media(max-width: 650px){
+  .user-profile-icon{
+    width: 26px;
+  }
 }
 
 /*************************************************************************************/
@@ -1614,7 +1625,9 @@ textarea.form-control {
   .dropdown-menu {
     display: block;
   }
-
+  .dropdown-menu.open{
+    height: 215px;
+  }
 
   .dropdown-menu.open .reg {
     display: none;
@@ -1709,7 +1722,7 @@ textarea.form-control {
   }
 
   .dropdown-menu.open {
-    height: 215px;
+    height: 280px;
   }
 
   #header .image {
@@ -1763,9 +1776,6 @@ textarea.form-control {
     justify-content: end;
   }
 
-  .dropdown-menu.open {
-    height: 215px;
-  }
 
   .dropdown-menu .search__input-1 {
     display: block;
@@ -1913,6 +1923,7 @@ textarea.form-control {
     font-weight: 500;
   }
 }
+
 
 
 

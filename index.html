@@ -32,16 +32,16 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="add-product.html">Add Product</a></li>
+
+
       </ul>
     </div>
     <div class="navbar-icons">
       <div class="search">
         <input type="text" class="search__input" placeholder="Search here">
       </div>
-      <!-- <div class="search-1">
-        <input type="text" class="search__input-1" placeholder="Search here">
-      </div> -->
-      <a href="cart.html"><img src="/icons/shopping.svg" alt=""></a>
+      <a href="cart.html"><img class="user-profile-icon" src="/icons/user-circle.svg" alt=""></a>
       <div class="login-container login-button">
         <a href="login.html"><button class="reg">Login</button></a>
       </div>
@@ -54,6 +54,7 @@
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="add-product.html">Add Product</a></li>
       <li>
         <div class="login-container login-button login">
           <a href="login.html"><button class="reg">Login</button></a>
@@ -736,31 +737,30 @@
 
   <!-- ....................................Here starts contact section........................................ -->
 
-  <section id="contact">
+  <section id="contact" class="about">
     <div class="container">
       <h2>Contact Us</h2>
-    <form action="#" onsubmit="sendMessage(); return false;">
-      <label class="one-label" for="name">Your Full Name*</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-      <div class="form-name-email">
-        <div class="form-group">
-          <label class="one-label" for="email">Your Email*</label>
-          <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com"
-            required>
+      <form action="#" onsubmit="sendMessage(); return false;">
+        <label class="one-label" for="name">Your Full Name*</label>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+        <div class="form-name-email">
+          <div class="form-group">
+            <label class="one-label" for="email">Your Email*</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="one-label" for="name">Phone Number*</label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
+          </div>
         </div>
-        <div class="form-group">
-          <label class="one-label" for="name">Phone Number*</label>
-          <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
-        </div>
-      </div>
-      <label class="one-label" for="subjet">Subject*</label>
-      <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+        <label class="one-label" for="subjet">Subject*</label>
+        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
 
-      <label class="one-label" for="button">Message*</label>
-      <textarea name="message" class="form-control" id="message" rows="5"
-        placeholder="Your message here.."></textarea>
-      <input type="submit" class="btn" value="Send Request">
-  </form>
+        <label class="one-label" for="button">Message*</label>
+        <textarea name="message" class="form-control" id="message" rows="5"
+          placeholder="Your message here.."></textarea>
+        <input type="submit" class="btn" value="Send Request">
+      </form>
     </div>
   </section>
 
@@ -827,6 +827,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/contact.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/bid.js"></script>

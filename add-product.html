@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/icons/Main Logo.svg">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/product.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Sell Items</title>
+</head>
+
+<body>
+
+
+    <section id="header">
+        <a href="#"><img class="image" src="/icons/Nextbid.svg" alt=""></a>
+        <div class="navbar-links">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="add-product.html">Add Product</a></li>
+            </ul>
+        </div>
+        <div class="navbar-icons">
+            <a href="cart.html"><img class="user-profile-icon" src="/icons/user-circle.svg" alt=""></a>
+        </div>
+
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+        <div class="dropdown-menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="add-product.html">Add Product</a></li>
+        </div>
+    </section>
+
+    <div class="product-form">
+        <h3>Add Your Item</h3>
+        <form class="product-container">
+            <label class="one-label" for="item-name">Title/Name*</label>
+            <input class="form-control-1" type="text" id="item-name" name="item-name" placeholder="Item name">
+
+            <label class="one-label" for="item-description">Item Description(optional)</label>
+            <textarea class="form-control-1" id="item-description" name="item-description"
+                placeholder="Use this section to add any extra information"></textarea>
+
+                <label class="one-label" for="item-name">Year(optional)</label>
+            <input class="form-control-1" type="text" id="item-year" name="item-year" placeholder="e.g 2022">
+
+
+            <label class="one-label" for="condition">Condition*</label required>
+            <select class="form-control-1 for-arrow" id="condition" name="condition">
+                <option id="new" value="new">New</option>
+                <option value="like_new">Like New</option>
+                <option value="used">Used</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label class="one-label" for="starting-price">Starting Price*</label>
+            <input class="form-control-1" type="text" name="amount" placeholder="Enter amount in USD" id="amount">
+
+            <div class="currency">
+                <span>Currency:</span>
+
+                <label class="currency-label"><input class="ratio" type="radio" name="currency" value="USD" checked
+                        onclick="changePlaceholder('Enter amount in USD')">USD</label>
+                <label><input class="ratio" type="radio" name="currency" value="EUR"
+                        onclick="changePlaceholder('Enter amount in EUR')">EUR</label>
+                <label><input class="ratio" type="radio" name="currency" value="GBP"
+                        onclick="changePlaceholder('Enter amount in GBP')">GBP</label>
+                <label><input class="ratio" type="radio" name="currency" value="PLN"
+                        onclick="changePlaceholder('Enter amount in PLN')">PLN</label>
+            </div>
+
+            <label class="one-label" for="duration">Auction duration:</label>
+            <div class="slider-bg">
+                <input type="range" min="1" max="7" value="1" class="slider" id="duration"
+                    oninput="output.value = this.value">
+
+                <div class="output">
+                    <output id="output">1</output> days
+                </div>
+            </div>
+
+            <div class="form-group-1 image-upload-container">
+                <label class="one-label" for="image-upload">Upload Image*</label>
+                <div class="image-and-info">
+                    <label class="file-upload">
+                        Choose File
+                        <input type="file" id="image-upload" name="image-upload" accept="image/jpeg, image/png">
+
+                    </label>
+                    <span class="file-info"></span>
+                </div>
+                <a class="cancel-button" onclick="cancelFile()"><alt="">Clear</a>
+            </div>
+
+            <button type="submit" class="product-btn">Add Product</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <script src="js/toggle-btn.js"></script>
+    <script src="js/date-range.js"></script>
+    <script src="js/ratio-choice.js"></script>
+    <script src="js/choose-image.js"></script>
+
+</body>
+
+</html>
