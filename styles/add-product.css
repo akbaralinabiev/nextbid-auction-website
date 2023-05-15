@@ -267,6 +267,17 @@ input.ratio {
     font-weight: 500;
   }
 
+  @media(max-width: 750px){
+    .product-form {
+      padding: 120px 40px;
+    }
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: 550px;
+    }
+  }
 
   @media(max-width: 650px){
     .product-form {
