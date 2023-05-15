@@ -17,7 +17,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Nextbid - About Us</title>
+    <title>Nextbid - Contact</title>
 </head>
 
 <body>
@@ -30,8 +30,8 @@
         <div class="navbar-links">
             <ul class="navbar">
                 <li><a href="main.html">Home</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a  class="active" href="contact.html">Contact</a></li>
                 <li><a href="add-product.html">Add Product</a></li>
 
 
@@ -54,82 +54,34 @@
 
 
 
-    <!-- ....................................Here starts about section........................................ -->
 
-    <section id="about" class="about">
-        <h2>MEET OUR TEEM</h2>
-        <div class="about-column">
-            <div class="about-wrapper">
+    <!-- ....................................Here starts contact section........................................ -->
 
-                <div class="about-info">
-                    <div class="person-image">
-                        <img src="images/users/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
+    <section id="contact" class="about">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" onsubmit="sendMessage(); return false;">
+                <label class="one-label" for="name">Your Full Name*</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                <div class="form-name-email">
+                    <div class="form-group">
+                        <label class="one-label" for="email">Your Email*</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com"
+                            required>
                     </div>
-                    <div class="person-info">
-                        <h4>PHIL SHACKLETON</h4>
-                        <h6>FOUNDER & DIGITAL DIRECTOR</h6>
-                        <p>Phil Shackleton is Founder and Digital Director of NextBid Auction.
-                            With years of experience in the digital marketing industry,
-                            he has established himself as a thought leader in the field, helping businesses
-                            grow and succeed through innovative digital marketing strategies.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="about-info ">
-                    <div class="person-image">
-                        <img src="images/users/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="">
-                    </div>
-                    <div class="person-info">
-                        <h4>MIKE DANFORD</h4>
-                        <h6>FOUNDER & CREATIVE DIRECTOR</h6>
-                        <p>Mike is a co-founder of Mixd and a highly skilled visual
-                            designer with an extensive background in service design for
-                            online health services. He brings a freshness and clarity of
-                            vision to everything he does with expertise in both visual design,
-                            information design and user-centred design processes.
-                        </p>
+                    <div class="form-group">
+                        <label class="one-label" for="name">Phone Number*</label>
+                        <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
                     </div>
                 </div>
+                <label class="one-label" for="subjet">Subject*</label>
+                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
 
-            </div>
-
-            <div class="about-wrapper">
-
-                <div class="about-info">
-                    <div class="person-image">
-                        <img src="images/users/samuel-raita-RiDxDgHg7pw-unsplash.png" alt="">
-                    </div>
-                    <div class="person-info">
-                        <h4>RORY ASHFORD-BENTLEY</h4>
-                        <h6>LEAD DEVELOPER</h6>
-                        <P>Rory started his career as a graphic designer but found his passion was
-                            ultimately in writing code. For the last 10+ years Rory has found his forte
-                            creating websites, extranets and apps for international clients with a
-                            heavy focus on public sector and private healthcare clients.
-                        </P>
-                    </div>
-                </div>
-
-
-
-                <div class="about-info">
-                    <div class="person-image">
-                        <img src="images/users/windows-c-lUYtNjqxw-unsplash.png" alt="">
-                    </div>
-                    <div class="person-info">
-                        <h4>ALEX SIMMONDS</h4>
-                        <h6>ACCOUNT MANAGER</h6>
-                        <P>Alex joined Mixd as a Project Manager after
-                            spending ten years working in retail management.
-                            She is a perpetual perfectionist and prides herself on
-                            her great communication skills that ensure clients are always
-                            bang up-to-date with progress on their projects.
-                    </div>
-                </div>
-            </div>
-
-        </div>
+                <label class="one-label" for="button">Message*</label>
+                <textarea name="message" class="form-control" id="message" rows="5"
+                    placeholder="Your message here.."></textarea>
+                <input type="submit" class="btn" value="Send Request">
+            </form>
         </div>
     </section>
 
