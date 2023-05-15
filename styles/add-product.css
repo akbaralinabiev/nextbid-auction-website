@@ -288,6 +288,10 @@ input.ratio {
     .product-form h3{
       font-size: 24px;
     }
+    .file-info {
+      display: inline-block;
+      max-width: 110px;
+    }
   }
 
   @media(max-width: 574px){
