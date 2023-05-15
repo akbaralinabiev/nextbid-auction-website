@@ -2,843 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="/icons/Main Logo.svg">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/styles/main.css">
-  <title>Nextbid - Auction Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="icon" href="/icons/Main Logo.svg">
+    <title>Nextbid - Login</title>
 </head>
 
 <body>
+    <header>
+        <!-- Login form -->
+        <div id="login-form" class="form-container form-login container animate__animated">
+            <h2>Login</h2>
 
-  <!-- ....................................Here starts navbar........................................ -->
+            <form id="contact-form" action="login.php" method="post" class="contact-form">
+                <label class="one-label" for="email">Email*</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com" required>
+                <label class="one-label" for="name">Password*</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="⁕⁕⁕⁕⁕⁕⁕⁕⁕⁕⁕" required>
+                <div class="Reset-Password">
+                    <a class="reset-psw" href="#" id="forgot-password-link">Forgot password?</a>
+                </div>
 
+                <button type="submit" class="btn">Sign In</button>
 
-  <section id="header">
-    <a href="#"><img class="image" src="/icons/Nextbid.svg" alt=""></a>
-    <div class="navbar-links">
-      <ul class="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="add-product.html">Add Product</a></li>
-
-
-      </ul>
-    </div>
-    <div class="navbar-icons">
-      <div class="search">
-        <input type="text" class="search__input" placeholder="Search here">
-      </div>
-      <a href="cart.html"><img class="user-profile-icon" src="/icons/user-circle.svg" alt=""></a>
-      <div class="login-container login-button">
-        <a href="login.html"><button class="reg">Login</button></a>
-      </div>
-    </div>
-
-    <div class="toggle-btn">
-      <i class="fa-solid fa-bars fa-lg"></i>
-    </div>
-    <div class="dropdown-menu">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="add-product.html">Add Product</a></li>
-      <li>
-        <div class="login-container login-button login">
-          <a href="login.html"><button class="reg">Login</button></a>
-        </div>
-      </li>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts hero section........................................ -->
-
-  <section id="hero">
-    <div class="hero">
-      <h4>ONLINE THRIFT SHOPPING WITH MEANING</h4>
-      <h1>Bid Smart, Save Big.</h1>
-      <h4>EVERY PURCHASE SUPPORTS THE NEXTBID MISSION</h4>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts Brands Section........................................ -->
-
-  <section class="brands">
-    <div class="brands-text">
-      <h4>Iconic Brands we work with</h4>
-    </div>
-    <div class="brands-hide">
-      <div class="first-row">
-        <img src="/images/louis-vuitton.svg" alt="">
-        <img src="/images/christofle.svg" alt="">
-        <img src="/images/hermes.svg" alt="">
-        <img src="/images/lego.svg" alt="">
-        <img src="/images/macallan.svg" alt="">
-        <img src="/images/marklin.svg" alt="">
-      </div>
-      <div class="second-row">
-        <img src="/images/nikon.svg" alt="">
-        <img src="/images/omega.svg" alt="">
-        <img src="/images/pokemon.svg" alt="">
-        <img src="/images/porsche.svg" alt="">
-        <img src="/images/rolex.svg" alt="">
-        <img src="/images/cartier.svg" alt="">
-      </div>
-    </div>
-
-    <div class="brands-mobile">
-      <div class="first-row-brands-mobile">
-        <img src="/images/louis-vuitton.svg" alt="">
-        <img src="/images/christofle.svg" alt="">
-        <img src="/images/hermes.svg" alt="">
-        <img src="/images/lego.svg" alt="">
-        <img src="/images/macallan.svg" alt="">
-        <img src="/images/marklin.svg" alt="">
-        <img src="/images/nikon.svg" alt="">
-        <img src="/images/omega.svg" alt="">
-        <img src="/images/pokemon.svg" alt="">
-        <img src="/images/porsche.svg" alt="">
-        <img src="/images/rolex.svg" alt="">
-        <img src="/images/cartier.svg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts Current Goods........................................ -->
-
-  <div class="current-goods">
-    <h2>Featured Products</h2>
-    <p>Find your next piece of the action</p>
-  </div>
-
-  <!-- ....................................Here starts Carousel Menu........................................ -->
-
-  <section class="card-content-1">
-    <div class="wrapper">
-      <div class="wrapper-choice first-choice">
-        <a href="#">
-          <h4>Art</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Interiors</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Jewellery</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Watches</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Fashion</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Coins & Stamps</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Books & Comics</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Cars & Motorbikes</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Interiors & Decorations</h4>
-        </a>
-      </div>
-      <div class="wrapper-choice">
-        <a href="#">
-          <h4>Sports</h4>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts products section........................................ -->
-  <div class="search__results"></div>
-
-
-
-  <section class="card-content">
-    <div class="wrapper cards">
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a href="#0"><img src="https://robohash.org/13" alt="Product Image" style="background-color: #d4f8f4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Machinex</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$90.00</span></p>
-          </div>
-          <p class="card-text-last card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in:<span id="timer" class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a href="#0"><img src="https://robohash.org/12" alt="Product Image" style="background-color: #eef8d4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Turboforce</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$110.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in:<span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href="#"><img src="https://robohash.org/93.105.176.244.png" alt="Product Image"
-              style="background-color: #e3d4f8;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Galactron</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$47.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in:<span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href="#"> <img src="https://robohash.org/1" alt="Product Image"
-              style="background-color: #f8d4e9;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Cybernova</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""> <img src="https://robohash.org/4" alt="Product Image"
-              style="background-color: #d4f8e4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Electraforge</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$112.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/5" alt="Product Image"
-              style="background-color: #f1d4f8;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Fusiontron</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$105.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/6" alt="Product Image"
-              style="background-color: #f8f3d4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Nanomax</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$120.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""> <img src="https://robohash.org/7" alt="Product Image"
-              style="background-color: #d4f8f4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Cybersphere</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$75.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="middle-p">
-    <p>Related Items</p>
-    <div class="row-23"></div>
-  </div>
-
-  <!-- ....................................Here starts products section........................................ -->
-  <section class="card-content">
-    <div class="wrapper cards">
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/18" alt="Product Image"
-              style="background-color: #d4f8d9;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Synthetron</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$55.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/17" alt="Product Image"
-              style="background-color: #d4d7f8;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Cyberrunner</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$65.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/16" alt="Product Image"
-              style="background-color: #e7d4f8;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Opticron</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$60.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/15" alt="Product Image"
-              style="background-color: #f8d4de;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Chronoblast</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$40.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/14" alt="Product Image"
-              style="background-color: #d4f8da;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Robosonic</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$30.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/11" alt="Product Image"
-              style="background-color: #d4f8f4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Neuronexus</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$20.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/100" alt="Product Image"
-              style="background-color: #d4f8f4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Pixelix</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$20.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-      <!-- ............................................................................ -->
-      <div class="card auction-card">
-        <div class="auction-card-img">
-          <a class="" href=""><img src="https://robohash.org/102" alt="Product Image"
-              style="background-color: #d4f8f4;"></a>
-        </div>
-        <div class="card-details">
-          <div class="like-icon-num">
-            <a class="like-button">
-              <i class="fa-regular fa-heart fa-lg like1-icon" style="color: #000000;"></i>
-              <i class="fa-solid fa-heart fa-lg" style="color: #f92a2a;"></i>
-            </a>
-            <span class="like-count">0</span>
-          </div>
-          <h3 class="card-title">Astrolex</h3>
-          <div class="current-price-p">
-            <div class="stroke"></div>
-            <p class="card-text card-text-2">Your bid: <span class="current-price current-bid">$0</span></p>
-            <p class="card-text">Last bid: <span class="current-price last-bid">$20.00</span></p>
-          </div>
-          <p class="card-text-1">Ends in: <span class="closing-time">2023-04-11T08:00:00Z</span></p>
-          <div class="card-bid">
-            <input type="number" class="bid-input" placeholder="Offer a price">
-            <button onclick="bid(this.closest('.auction-card'))">Bid now</button>
-          </div>
-          <p class="card-text-last card-text">Ends in: <span class="countdown-timer"></span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts intro section........................................ -->
-  <section class="intro">
-    <div class="intro-info">
-      <h2>EVERYONE DESERVES THE OPPORTUNITY TO THRIVE</h2>
-      <h4>Every purchase powers the Nextbid mission</h4>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts about section........................................ -->
-
-  <section id="about" class="about">
-    <h2>MEET OUR TEEM</h2>
-    <div class="about-column">
-      <div class="about-wrapper">
-
-        <div class="about-info">
-          <div class="person-image">
-            <img src="images/users/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
-          </div>
-          <div class="person-info">
-            <h4>PHIL SHACKLETON</h4>
-            <h6>FOUNDER & DIGITAL DIRECTOR</h6>
-            <p>Phil Shackleton is Founder and Digital Director of NextBid Auction.
-              With years of experience in the digital marketing industry,
-              he has established himself as a thought leader in the field, helping businesses
-              grow and succeed through innovative digital marketing strategies.
-            </p>
-          </div>
+                <div class="login-method">
+                    <div class="login-method-divider">
+                        <div class="login-method-divider-line"></div>
+                        <div class="login-method-divider-text">or Sign In with</div>
+                        <div class="login-method-divider-line"></div>
+                      </div>
+                    <button class="login-method-btn" type="button"><img src="icons/logos_google-icon.svg" alt="">Google</button>
+                    <button class="login-method-btn" type="button"><img src="icons/logos_facebook.svg" alt="">Facebook</button>
+                </div>
+            </form>
+            <br>
+            <div class="switch-button">
+                <p>If you don't have an account &nbsp;</p>
+                <button id="register-btn">Create one</button>
+            </div>
         </div>
 
-        <div class="about-info ">
-          <div class="person-image">
-            <img src="images/users/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="">
-          </div>
-          <div class="person-info">
-            <h4>MIKE DANFORD</h4>
-            <h6>FOUNDER & CREATIVE DIRECTOR</h6>
-            <p>Mike is a co-founder of Mixd and a highly skilled visual
-              designer with an extensive background in service design for
-              online health services. He brings a freshness and clarity of
-              vision to everything he does with expertise in both visual design,
-              information design and user-centred design processes.
-            </p>
-          </div>
+        <!-- Register form -->
+        <div id="register-form" class="form-container form-login container animate__animated">
+            <h2>Sign Up</h2>
+
+            <form id="contact-form" method="post" class="contact-form">
+                <label class="one-label" for="name">Full Name*</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Akbarali Nabiev" required>
+                <label class="one-label" for="email">Email*</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com" required>
+                <label class="one-label" for="name">Password*</label>
+                <input type="password" name="password" class="form-control psw" id="password" placeholder="⁕⁕⁕⁕⁕⁕⁕⁕⁕⁕⁕" required>
+                <div class="policy">
+                    <input class="checkbox" type="checkbox" required>
+                    <p>I accept all <a href="#">terms</a> & <a href="#">condition</a></p>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+            <div class="switch-button-1">
+                <p>Already Signed Up? &nbsp;</p>
+                <button id="login-btn">Login now</button>
+            </div>
         </div>
 
-      </div>
+        <div id="forgot-password" class="form-container form-login container animate__animated">
+            <h2>Reset Password</h2>
+            <p>Enter your email address associated with your account. We'll send you a link to reset your password</p>
 
-      <div class="about-wrapper">
+            <form id="contact-form" method="post" class="contact-form">
+                <label class="one-label" for="email">Email*</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
+                <div class="resend-email-text-div">
+                    <a href="#" class="resend-email-text">Resend Email</a>
+                </div>
 
-        <div class="about-info">
-          <div class="person-image">
-            <img src="images/users/samuel-raita-RiDxDgHg7pw-unsplash.png" alt="">
-          </div>
-          <div class="person-info">
-            <h4>RORY ASHFORD-BENTLEY</h4>
-            <h6>LEAD DEVELOPER</h6>
-            <P>Rory started his career as a graphic designer but found his passion was
-              ultimately in writing code. For the last 10+ years Rory has found his forte
-              creating websites, extranets and apps for international clients with a
-              heavy focus on public sector and private healthcare clients.
-            </P>
-          </div>
+                <button type="submit" class="btn">Send</button>
+                <!-- <a href="#" type="submit" class="btn">Create account</a> -->
+                <button id="back-to-login-btn" type="button" class="btn-1">Back to Login</button>
+            </form>
         </div>
-
-
-
-        <div class="about-info">
-          <div class="person-image">
-            <img src="images/users/windows-c-lUYtNjqxw-unsplash.png" alt="">
-          </div>
-          <div class="person-info">
-            <h4>ALEX SIMMONDS</h4>
-            <h6>ACCOUNT MANAGER</h6>
-            <P>Alex joined Mixd as a Project Manager after
-              spending ten years working in retail management.
-              She is a perpetual perfectionist and prides herself on
-              her great communication skills that ensure clients are always
-              bang up-to-date with progress on their projects.
-          </div>
+        <div class="guest">
+            <a href="index.html"><p>Continue as a Guest</p></a>
         </div>
-      </div>
-
-    </div>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts contact section........................................ -->
-
-  <section id="contact" class="about">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="#" onsubmit="sendMessage(); return false;">
-        <label class="one-label" for="name">Your Full Name*</label>
-        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-        <div class="form-name-email">
-          <div class="form-group">
-            <label class="one-label" for="email">Your Email*</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com" required>
-          </div>
-          <div class="form-group">
-            <label class="one-label" for="name">Phone Number*</label>
-            <input type="tel" name="phone" class="form-control" id="phone" placeholder="+48 123 456 789">
-          </div>
-        </div>
-        <label class="one-label" for="subjet">Subject*</label>
-        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
-
-        <label class="one-label" for="button">Message*</label>
-        <textarea name="message" class="form-control" id="message" rows="5"
-          placeholder="Your message here.."></textarea>
-        <input type="submit" class="btn" value="Send Request">
-      </form>
-    </div>
-  </section>
-
-  <!-- ....................................Here starts footer........................................ -->
-
-
-  <footer class="footer">
-    <div class="container-1">
-      <div class="row">
-        <div class="footer-col">
-          <h4>company</h4>
-          <ul class="footer-ul">
-            <li><a href="#">about us</a></li>
-            <li><a href="#">new items</a></li>
-            <li><a href="#">privacy policy</a></li>
-            <li><a href="#">affiliate program</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>get help</h4>
-          <ul class="footer-ul">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">order status</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>online shop</h4>
-          <ul class="footer-ul">
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="last-div">
-    <p>Copyright ©, 2023 by Nexbid - Auction Website.</p>
-  </div>
-
-  <!--*************************************Here starts top-to button***************************************-->
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <img src="/icons/to-top-button.svg" alt="Back to Top">
-  </button>
-
-  <!--*************************************Here starts js links***************************************-->
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/bid.js"></script>
-  <script src="/js/scroll.js"></script>
-  <script src="/js/top-to-scroll.js"></script>
-  <script src="/js/like-counter.js"></script>
-  <script src="/js/toggle-btn.js"></script>
-  <script src="js/pagination.js"></script>
-  <script src="js/search-filter.js"></script>
-  <script src="js/pop-up-screen.js"></script>
-
+ </header>
+    <script src="/js/login.js"></script>
 </body>
 
 </html>
