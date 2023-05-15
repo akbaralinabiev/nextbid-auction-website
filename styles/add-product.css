@@ -266,3 +266,53 @@ input.ratio {
     text-decoration: none;
     font-weight: 500;
   }
+
+
+  @media(max-width: 650px){
+    .product-form {
+      padding: 120px 40px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: auto;
+    }
+
+    .product-form h3{
+      font-size: 24px;
+    }
+  }
+
+  @media(max-width: 574px){
+    .product-form {
+      padding: 90px 20px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: auto;
+    }
+    .product-form h3{
+      font-size: 20px;
+    }
+    /* .form-control-1 {
+      height: 36px;
+    } */
+    .product-btn {
+      padding: 0.4rem;
+    }
+  }
