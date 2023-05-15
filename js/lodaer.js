@@ -4,4 +4,5 @@ setTimeout(function() {
     sessionStorage.setItem("redirected", "true");
     window.location.href = "main.html";
   }
-}, 3000);
+}, 2000);
+
