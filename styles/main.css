@@ -1333,29 +1333,32 @@ textarea.form-control {
 }
 
 .btn {
-  width: 100%;
-  display: inline-block;
-  font-weight: 400;
-  color: #212529;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid #ced4da;
-  padding: 0.375rem;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 4px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  cursor: pointer;
-}
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #1fae9b;
+    border: 1px solid #ced4da;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+  }
 
 .btn:hover {
-  color: #fff;
-  background-color: #1fae9b;
-  border-color: #128777;
+    color: #fff;
+    outline: none;
+    background-color: #1c9f8e;
+    border-color: #128777;
 }
 
 @media (max-width: 767px) {

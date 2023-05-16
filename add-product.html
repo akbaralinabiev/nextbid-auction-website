@@ -53,13 +53,13 @@
         <h3>Add Your Item</h3>
         <form class="product-container">
             <label class="one-label" for="item-name">Title/Name*</label>
-            <input class="form-control-1" type="text" id="item-name" name="item-name" placeholder="Item name">
+            <input class="form-control-1" type="text" id="item-name" name="item-name" placeholder="Item name" required>
 
             <label class="one-label" for="item-description">Item Description(optional)</label>
             <textarea class="form-control-1" id="item-description" name="item-description"
                 placeholder="Use this section to add any extra information"></textarea>
 
-                <label class="one-label" for="item-name">Year of production (optional)</label>
+            <label class="one-label" for="item-name">Year of production (optional)</label>
             <input class="form-control-1" type="text" id="item-year" name="item-year" placeholder="e.g 2022">
 
 
@@ -73,12 +73,13 @@
             </select>
 
             <label class="one-label" for="starting-price">Starting Price*</label>
-            <input class="form-control-1" type="text" name="amount" placeholder="Enter amount in USD" id="amount">
+            <input class="form-control-1" type="text" name="amount" placeholder="Enter amount in USD" id="amount"
+                required>
 
             <div class="currency">
                 <span>Currency:</span>
 
-                <label class="currency-label"><input class="ratio" type="radio" name="currency" value="USD" checked
+                <label><input class="ratio" type="radio" name="currency" value="USD" checked
                         onclick="changePlaceholder('Enter amount in USD')">USD</label>
                 <label><input class="ratio" type="radio" name="currency" value="EUR"
                         onclick="changePlaceholder('Enter amount in EUR')">EUR</label>
@@ -90,12 +91,11 @@
 
             <label class="one-label" for="duration">Auction duration:</label>
             <div class="slider-bg">
-                <input type="range" min="1" max="7" value="1" class="slider" id="duration"
-                    oninput="output.value = this.value">
-
                 <div class="output">
                     <output id="output">1</output> days
                 </div>
+                <input type="range" min="1" max="7" value="1" class="slider" id="duration"
+                    oninput="output.value = this.value">
             </div>
 
             <div class="form-group-1 image-upload-container">
@@ -108,7 +108,9 @@
                     </label>
                     <span class="file-info"></span>
                 </div>
-                <a class="cancel-button" onclick="cancelFile()"><alt="">Clear</a>
+                <a class="cancel-button" onclick="cancelFile()">
+                    <alt="">Clear
+                </a>
             </div>
 
             <button type="submit" class="product-btn">Add Product</button>

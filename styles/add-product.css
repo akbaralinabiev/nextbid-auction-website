@@ -191,12 +191,15 @@ input.ratio {
 
 .output {
   font-size: 20px;
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 60px;
   margin-left: 10px;
+}
+
+#output{
+  padding-bottom: 15px;
 }
 
 .image-upload-container{
