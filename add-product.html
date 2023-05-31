@@ -59,44 +59,9 @@
             <textarea class="form-control-1" id="item-description" name="item-description"
                 placeholder="Use this section to add any extra information"></textarea>
 
-            <label class="one-label" for="item-name">Year of production (optional)</label>
-            <input class="form-control-1" type="text" id="item-year" name="item-year" placeholder="e.g 2022">
-
-
-            <label class="one-label" for="condition">Condition*</label required>
-            <select class="form-control-1 for-arrow" id="condition" name="condition">
-                <option id="new" value="new">New</option>
-                <option value="like_new">Like New</option>
-                <option value="used">Used</option>
-                <option value="fair">Fair</option>
-                <option value="poor">Poor</option>
-            </select>
-
             <label class="one-label" for="starting-price">Starting Price*</label>
             <input class="form-control-1" type="text" name="amount" placeholder="Enter amount in USD" id="amount"
                 required>
-
-            <div class="currency">
-                <span>Currency:</span>
-
-                <label><input class="ratio" type="radio" name="currency" value="USD" checked
-                        onclick="changePlaceholder('Enter amount in USD')">USD</label>
-                <label><input class="ratio" type="radio" name="currency" value="EUR"
-                        onclick="changePlaceholder('Enter amount in EUR')">EUR</label>
-                <label><input class="ratio" type="radio" name="currency" value="GBP"
-                        onclick="changePlaceholder('Enter amount in GBP')">GBP</label>
-                <label><input class="ratio" type="radio" name="currency" value="PLN"
-                        onclick="changePlaceholder('Enter amount in PLN')">PLN</label>
-            </div>
-
-            <label class="one-label" for="duration">Auction duration:</label>
-            <div class="slider-bg">
-                <div class="output">
-                    <output id="output">1</output> days
-                </div>
-                <input type="range" min="1" max="7" value="1" class="slider" id="duration"
-                    oninput="output.value = this.value">
-            </div>
 
             <div class="form-group-1 image-upload-container">
                 <label class="one-label" for="image-upload">Upload Image*</label>
