@@ -24,7 +24,7 @@ function sendMessage() {
     chat_id: chatId,
     text: text,
   })
-    .then(function (response) {
+    .then(function (response) { 
       swal({
         title: "Success!",
         text: "Your request has been sent!",
